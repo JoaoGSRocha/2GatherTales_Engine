@@ -14,6 +14,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
 import com.mygdx.game.Model.PlayerCursor;
 import com.mygdx.game.Model.Screen;
+import com.mygdx.game.UI.UI_Render;
 
 public class Game2D extends ApplicationAdapter {
 
@@ -21,7 +22,7 @@ public class Game2D extends ApplicationAdapter {
 	private SpriteBatch batch;
 	private OrthographicCamera camera;
 	private Rectangle currMousePos;
-	private PlayerCursor playerCursor;
+	PlayerCursor playerCursor;
 	private SpriteAnimation spriteAnim;
 	private Animator anim;
 	private DialogRect dialogRect;
@@ -30,11 +31,16 @@ public class Game2D extends ApplicationAdapter {
 	BitmapFont font;
 	Map<Rectangle, Integer> map;
 	Input input;
+	UI_Render ui_render;
+
 
 	@Override
 	public void create() {
+		playerCursor = new PlayerCursor();
+		ui_render = new UI_Render();
+		ui_render.stage_Init();
 
-		PlayerCursor playerCursor = new PlayerCursor();
+
 
 		playerCursor.setPositionX(350);
 		playerCursor.setPositionY(220);
@@ -78,7 +84,7 @@ public class Game2D extends ApplicationAdapter {
 
 		batch.setProjectionMatrix(camera.combined);
 		batch.begin();
-
+		ui_render.stage_Render();
 		spriteAnim.DrawSprite(batch, playerCursor.getPositionX(),
 				playerCursor.getPositionY());
 

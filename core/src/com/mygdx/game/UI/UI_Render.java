@@ -1,23 +1,37 @@
 package com.mygdx.game.UI;
 
-import com.badlogic.gdx.math.Rectangle;
-import com.mygdx.game.TownMap;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+public class UI_Render  {
+    Stage stage;
+    TextButton button;
+    TextButton.TextButtonStyle textButtonStyle;
+    BitmapFont font;
+    Skin skin;
 
-public class UI_Render {
+    public void stage_Init(){
+        stage = new Stage();
+        Gdx.input.setInputProcessor(stage);
+        font = new BitmapFont(Gdx.files.internal("firstryFont.fnt"));
+        skin = new Skin();
+        textButtonStyle = new TextButton.TextButtonStyle();
+        textButtonStyle.font = font;
+        button = new TextButton("Button1", textButtonStyle);
+        button.addListener(new ChangeListener() {
+            public void changed (ChangeListener.ChangeEvent event, Actor actor) {
+                System.out.println("Button Pressed");
+            }
+        });
+        stage.addActor(button);
+    }
 
-    public void render(){
-//        new TownMap().DrawBuildings(
-//                batch, currPos, blacksmithWorkshopImage,
-//                merchantWharehouseImage, wharehouseImage);
-//
-//        for (Rectangle raindrop : raindrops)
-//            batch.draw(
-//                    dropImage, raindrop.x + currPos.x, raindrop.y + currPos.y);
-//
-//        for (Rectangle sellBuilding : sellingBuildings)
-//            batch.draw(
-//                    pebblesImage, sellBuilding.x + currPos.x,
-//                    sellBuilding.y + currPos.y);
+    public void stage_Render(){
+        stage.draw();
     }
 
 }
