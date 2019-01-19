@@ -1,26 +1,18 @@
 package com.mygdx.game.Model;
 
+import com.badlogic.gdx.math.Rectangle;
+
 public class PlayerCursor {
-    private int pcWidth, pcHeight;
+    private Rectangle cursor;
 
-    public PlayerCursor(int pcWidth, int pcHeight) {
-        this.pcWidth = pcWidth;
-        this.pcHeight = pcHeight;
-    }
+    public Rectangle cursorRectangle(){
+        // create a Rectangle to logically represent the bucket
+        cursor = new Rectangle();
+        cursor.x = 800 / 2 - 64 / 2; // center the bucket horizontally
+        cursor.y = 20; // bottom left corner of the bucket is 20 pixels above the bottom screen edge
+        cursor.width = 64;
+        cursor.height = 64;
 
-    public int getPcWidth() {
-        return pcWidth;
-    }
-
-    public void setPcWidth(int pcWidth) {
-        this.pcWidth = pcWidth;
-    }
-
-    public int getPcHeight() {
-        return pcHeight;
-    }
-
-    public void setPcHeight(int pcHeight) {
-        this.pcHeight = pcHeight;
+        return cursor;
     }
 }
