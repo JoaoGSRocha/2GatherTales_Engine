@@ -1,7 +1,9 @@
 package com.mygdx.game.Model;
 
 public class Screen {
-    private int fieldLeftEdge, fieldRightEdge, fieldUpEdge, fieldDownEdge;
+    private float fieldLeftEdge, fieldRightEdge, fieldUpEdge, fieldDownEdge;
+
+    private int screenWidth, screenHeight;
 
     public Screen(int fieldLeftEdge, int fieldRightEdge, int fieldUpEdge,
                   int fieldDownEdge) {
@@ -11,27 +13,35 @@ public class Screen {
         this.fieldDownEdge = fieldDownEdge;
     }
 
-    public int getFieldLeftEdge() { return fieldLeftEdge; }
+    public float getFieldLeftEdge() { return fieldLeftEdge; }
 
-    public void setFieldLeftEdge(int fieldLeftEdge) {
+    public void setFieldLeftEdge(float fieldLeftEdge) {
         this.fieldLeftEdge = fieldLeftEdge;
     }
 
-    public int getFieldRightEdge() { return fieldRightEdge; }
+    public float getFieldRightEdge() { return fieldRightEdge; }
 
-    public void setFieldRightEdge(int fieldRightEdge) {
+    public void setFieldRightEdge(float fieldRightEdge) {
         this.fieldRightEdge = fieldRightEdge;
     }
 
-    public int getFieldUpEdge() { return fieldUpEdge; }
+    public float getFieldUpEdge() { return fieldUpEdge; }
 
-    public void setFieldUpEdge(int fieldUpEdge) {
+    public void setFieldUpEdge(float fieldUpEdge) {
         this.fieldUpEdge = fieldUpEdge;
     }
 
-    public int getFieldDownEdge() { return fieldDownEdge; }
+    public float getFieldDownEdge() { return fieldDownEdge; }
 
-    public void setFieldDownEdge(int fieldDownEdge) {
+    public void setFieldDownEdge(float fieldDownEdge) {
         this.fieldDownEdge = fieldDownEdge;
     }
+
+    public int getScreenWidth() { return screenWidth; }
+
+    public void setScreenWidth(int screenWidth) { this.screenWidth = screenWidth; }
+
+    public int getScreenHeight() { return screenHeight; }
+
+    public void setScreenHeight(int screenHeight) { this.screenHeight = screenHeight; }
 }

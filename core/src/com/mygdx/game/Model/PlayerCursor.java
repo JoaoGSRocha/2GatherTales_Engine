@@ -5,6 +5,19 @@ import com.badlogic.gdx.math.Rectangle;
 public class PlayerCursor {
     private Rectangle cursor;
 
+    private float positionX;
+    private float positionY;
+
+    public PlayerCursor() {
+        this.positionX = 350;
+        this.positionY = 250;
+    }
+
+    public PlayerCursor(int positionX, int positionY) {
+        this.positionX = positionX;
+        this.positionY = positionY;
+    }
+
     public Rectangle cursorRectangle(){
         // create a Rectangle to logically represent the bucket
         cursor = new Rectangle();
@@ -15,4 +28,12 @@ public class PlayerCursor {
 
         return cursor;
     }
+
+    public float getPositionX() { return positionX; }
+
+    public void setPositionX(float positionX) { this.positionX = positionX; }
+
+    public float getPositionY() { return positionY; }
+
+    public void setPositionY(float positionY) { this.positionY = positionY; }
 }
