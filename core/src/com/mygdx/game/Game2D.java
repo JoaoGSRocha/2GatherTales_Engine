@@ -12,6 +12,25 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.TimeUtils;
+
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
@@ -38,10 +57,30 @@ public class Game2D extends ApplicationAdapter {
 
 	Map<Rectangle, Integer> map;
 
+	Stage stage;
+	TextButton button;
+	TextButton.TextButtonStyle textButtonStyle;
+	Skin skin;
+	TextureAtlas buttonAtlas;
+
 	Input input;
 
 	@Override
 	public void create() {
+
+		stage = new Stage();
+		Gdx.input.setInputProcessor(stage);
+		font = new BitmapFont();
+		skin = new Skin();
+		textButtonStyle = new TextButtonStyle();
+		textButtonStyle.font = font;
+		button = new TextButton("Button1", textButtonStyle);
+		button.addListener(new ChangeListener() {
+			public void changed (ChangeEvent event, Actor actor) {
+				System.out.println("Button Pressed");
+			}
+		});
+		stage.addActor(button);
 
 		input = new Input();
 
@@ -93,7 +132,9 @@ public class Game2D extends ApplicationAdapter {
 
 		batch.begin();
 
-		
+		super.render();
+		stage.draw();
+
 		spriteAnim.DrawSprite(batch, PLAYERX, PLAYERY);
 		if (mining) {
 			anim.drawPickaxe(batch);
