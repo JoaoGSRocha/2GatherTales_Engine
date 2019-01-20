@@ -18,12 +18,14 @@ public class UI_Render  {
     public void stage_Init(){
         stage = new Stage();
         Gdx.input.setInputProcessor(stage);
-        button = new UI_Logic().createButton("Button1",new int[]{0,100},new ChangeListener() {
+        button = new UI_Logic().createButton("Button1",new float[]{0,100},
+                new ChangeListener() {
             public void changed (ChangeListener.ChangeEvent event, Actor actor) {
                 System.out.println("Button1 Pressed");
             }
         });
-        button2 = new UI_Logic().createButton("Button2",new int[]{0,200}, new ChangeListener() {
+        button2 = new UI_Logic().createButton("Button2",new float[]{0,200},
+                new ChangeListener() {
             public void changed (ChangeListener.ChangeEvent event, Actor actor) {
                 System.out.println("Button2 Pressed");
             }

@@ -8,7 +8,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 
 public class UI_Logic {
 
-    public TextButton createButton(String txt, int[] coords, ChangeListener changeListener){
+    public TextButton createButton(String txt, float[] coords,
+                                   ChangeListener changeListener){
         BitmapFont font = new BitmapFont();
         Skin skin = new Skin(); // used for texturing the button's background
         TextButtonStyle textButtonStyle = new TextButtonStyle();
