@@ -12,7 +12,7 @@ public class JSONParser {
 
         switch (type) {
             case("answer")  :
-                buttonFactory.createAnswerButton(response.getAnswer_al());
+                buttonFactory.createAnswerButton_Al(response.getAnswer_al());
                 break;
             case("question") :
                 break;
