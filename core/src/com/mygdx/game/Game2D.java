@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
+import com.mygdx.game.JSON.JSONParser;
 import com.mygdx.game.Model.PlayerCursor;
 import com.mygdx.game.Model.Screen;
 import com.mygdx.game.UI.UI_Render;
@@ -40,7 +41,8 @@ public class Game2D extends ApplicationAdapter {
 		ui_render = new UI_Render();
 		ui_render.stage_Init();
 
-
+		JSONParser jsonParser = new JSONParser();
+		jsonParser.load();
 
 		playerCursor.setPositionX(350);
 		playerCursor.setPositionY(220);

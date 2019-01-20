@@ -1,0 +1,20 @@
+{
+    "id" : {
+            "serialnumb": "1",
+            "type": "answer"                  
+    },
+
+    "question" : "What are you up to?", 
+
+    "answers":{
+        "1" : "fdfdfd",
+        "2" : "rererere",
+        "3" : "fdetwetwetwe"
+    },
+    "triggers": {
+        "1" : "q2a",
+        "2" : "q2b",
+        "3" : "q2b",
+        "4" : "q3b"
+    }
+}

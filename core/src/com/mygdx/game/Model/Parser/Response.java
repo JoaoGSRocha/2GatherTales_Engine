@@ -1,8 +1,10 @@
 package com.mygdx.game.Model.Parser;
 
+import com.badlogic.gdx.utils.Disposable;
+
 import java.util.ArrayList;
 
-public class Response {
+public class Response implements Disposable {
 
     private Key key;
     private ArrayList<Answer> answer_al;
@@ -31,4 +33,8 @@ public class Response {
         this.trigger_al = trigger_al;
     }
 
+    @Override
+    public void dispose() {
+
+    }
 }
