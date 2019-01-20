@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygdx.game.JSON.JSONParser;
 import com.mygdx.game.Model.PlayerCursor;
 import com.mygdx.game.Model.Screen;
@@ -22,6 +23,7 @@ public class Game2D extends ApplicationAdapter {
 	private Screen screen;
 	private SpriteBatch batch;
 	private OrthographicCamera camera;
+	private FitViewport viewport;
 	private Rectangle currMousePos;
 	PlayerCursor playerCursor;
 	private SpriteAnimation spriteAnim;
@@ -55,7 +57,8 @@ public class Game2D extends ApplicationAdapter {
 
 		// create the camera and the SpriteBatch
 		camera = new OrthographicCamera();
-		camera.setToOrtho(false, 800, 480);
+		viewport = new FitViewport(1920, 1080,camera);
+		camera.position.set(camera.viewportWidth/2,camera.viewportHeight/2,0);
 		batch = new SpriteBatch();
 		dialogRect = new DialogRect();
 		shapeRenderer = new ShapeRenderer();
@@ -76,10 +79,7 @@ public class Game2D extends ApplicationAdapter {
 	@Override
 	public void render() {
 
-		System.out.println(playerCursor.getPositionX()+" "
-				+playerCursor.getPositionY());
-
-		Gdx.gl.glClearColor(1.13f, 0.84f, 0.75f, 1);
+		Gdx.gl.glClearColor(0f, 0f, 0f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		camera.update();
@@ -116,4 +116,11 @@ public class Game2D extends ApplicationAdapter {
 		anim.dispose();
 		spriteAnim.dispose();
 	}
+
+	@Override
+	public void resize(int width, int height){
+		viewport.update(width,height);
+		camera.position.set(camera.viewportWidth/2,camera.viewportHeight/2,0);
+	}
+
 }
