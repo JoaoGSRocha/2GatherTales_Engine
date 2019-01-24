@@ -16,7 +16,6 @@ public class JSONParser {
 
     JsonReader json = new JsonReader();
     JsonValue base = json.parse(Gdx.files.internal("response.json"));
-    private FileHandle file = Gdx.files.local("response.json");
 
     ButtonFactory buttonFactory;
 
@@ -39,6 +38,30 @@ public class JSONParser {
     }
 
     public void load() {
+
+        Response resposta = new Response();
+
         System.out.println(base);
+
+        //get the component values
+        JsonValue response = base.get("response").get(0);
+
+//print class value to console
+        System.out.println(response.getString("question"));
+
+        System.out.println(response.get("answers"));
+
+        System.out.println(response.get("triggers"));
+
+        //JsonValue Answers = base.get("response").get(0);
+       // System.out.println(Answers.getString("triggers"));
+
+//array objects in json if you would have more components
+       /* for (JsonValue Key : base.get("keys"))
+        {
+            System.out.println(Key.getString("class"));
+            System.out.println(Key.get("asset").getString("class");
+            System.out.println(Key.get("asset").getString("relativePath");
+        }*/
     }
 }

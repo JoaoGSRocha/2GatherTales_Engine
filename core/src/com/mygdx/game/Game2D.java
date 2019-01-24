@@ -76,8 +76,8 @@ public class Game2D extends ApplicationAdapter {
 	@Override
 	public void render() {
 
-		System.out.println(playerCursor.getPositionX()+" "
-				+playerCursor.getPositionY());
+		//System.out.println(playerCursor.getPositionX()+" "
+			//	+playerCursor.getPositionY());
 
 		Gdx.gl.glClearColor(1.13f, 0.84f, 0.75f, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
