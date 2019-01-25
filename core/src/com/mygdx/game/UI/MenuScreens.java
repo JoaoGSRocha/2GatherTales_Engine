@@ -8,6 +8,9 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Slider;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.Game2D;
@@ -26,7 +29,10 @@ public class MenuScreens implements Screen {
 
     @Override
     public void show() {
+        showSettings();
+    }
 
+    public void showMain(){
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(true);
@@ -47,7 +53,34 @@ public class MenuScreens implements Screen {
         table.add(preferences).fillX().uniformX();
         table.row();
         table.add(exit).fillX().uniformX();
+    }
 
+    public void showSettings()
+    {
+        // Create a table that fills the screen. Everything else will go inside this table.
+        Table table = new Table();
+        table.setFillParent(true);
+        table.setDebug(true);
+        stage.addActor(table);
+
+        // temporary until we have asset manager in
+        Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
+
+        //Create Slider
+        Slider audioSlider = new Slider(0, 1, 0.05f, false, skin);
+
+        //add buttons to table
+        table.add(audioSlider).fillX().uniformX();
+        table.row().pad(10, 0, 10, 0);
+
+        // create Slider listeners
+        audioSlider.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                //pbrShader.albedoColor.x=audioSlider.getValue();
+                System.out.println(audioSlider.getValue());
+            }
+        });
     }
 
     @Override
