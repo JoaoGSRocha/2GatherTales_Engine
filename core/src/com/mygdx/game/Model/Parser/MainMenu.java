@@ -1,16 +1,11 @@
 package com.mygdx.game.Model.Parser;
 
-public class Answer implements Triggerable {
-    private String text;
+public class MainMenu implements Triggerable{
+
+    private String startBtn;
+    private String settingsBtn;
+    private String exitBtn;
     private Key triggerKey;
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 
     @Override
     public Key getTriggerKey() {
@@ -19,6 +14,6 @@ public class Answer implements Triggerable {
 
     @Override
     public void setTriggerKey(Key key) {
-
+        this.triggerKey = key;
     }
 }

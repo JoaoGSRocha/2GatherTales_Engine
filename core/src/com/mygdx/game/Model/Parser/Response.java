@@ -8,8 +8,10 @@ public class Response implements Disposable {
 
     private Key key;
     private ArrayList<Answer> answer_al;
-    private ArrayList<Question> question_al;
-    private ArrayList<Trigger> trigger_al;
+    private ArrayList<Cinematic> cinematic_al;
+    private ArrayList<MainMenu> mainMenu_al;
+    private ArrayList<Settings> settings_al;
+    private Key triggerkey;
 
     public Key getKey() { return key; }
 
@@ -21,20 +23,24 @@ public class Response implements Disposable {
         this.answer_al = answer_al;
     }
 
-    public ArrayList<Question> getQuestion_al() { return question_al; }
+    public ArrayList<Cinematic> getCinematic_al() { return cinematic_al; }
 
-    public void setQuestion_al(ArrayList<Question> question_al) {
-        this.question_al = question_al;
+    public void setCinematic_al(ArrayList<Cinematic> cinematic_al) {
+        this.cinematic_al = cinematic_al;
     }
 
-    public ArrayList<Trigger> getTrigger_al() { return trigger_al; }
+    public ArrayList<MainMenu> getMainMenu_al() { return mainMenu_al; }
 
-    public void setTrigger_al(ArrayList<Trigger> trigger_al) {
-        this.trigger_al = trigger_al;
+    public void setMainMenu_al(ArrayList<MainMenu> mainMenu_al) {
+        this.mainMenu_al = mainMenu_al;
+    }
+
+    public ArrayList<Settings> getSettings_al() { return settings_al; }
+
+    public void setSettings_al(ArrayList<Settings> settings_al) {
+        this.settings_al = settings_al;
     }
 
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() { }
 }
