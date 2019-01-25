@@ -4,6 +4,9 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.mygdx.game.Model.Parser.Answer;
+import com.mygdx.game.Model.Parser.Cinematic;
+import com.mygdx.game.Model.Parser.MainMenu;
+import com.mygdx.game.Model.Parser.Settings;
 
 import java.util.ArrayList;
 
@@ -60,5 +63,20 @@ public class ButtonFactory {
             textButtonAl.add(button);
         }
         return textButtonAl;
+    }
+
+    public ArrayList<TextButton> createCinematicButton_Al(ArrayList<Cinematic> cinematic_al){
+        ArrayList<TextButton> textButtons = new ArrayList<TextButton>();
+        return textButtons;
+    }
+
+    public ArrayList<TextButton> createSettingsButton_Al(ArrayList<Settings> settings){
+        ArrayList<TextButton> textButtons = new ArrayList<TextButton>();
+        return textButtons;
+    }
+
+    public ArrayList<TextButton> createMainMenuButton_Al(ArrayList<MainMenu> mainMenus){
+        ArrayList<TextButton> textButtons = new ArrayList<TextButton>();
+        return textButtons;
     }
 }
