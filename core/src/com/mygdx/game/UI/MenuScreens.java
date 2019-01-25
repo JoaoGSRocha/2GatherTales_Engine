@@ -30,6 +30,7 @@ public class MenuScreens implements Screen {
     }
 
     public void showMain(){
+        stage.clear();
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(false);
@@ -50,6 +51,13 @@ public class MenuScreens implements Screen {
         table.add(preferences).fillX().uniformX();
         table.row();
         table.add(exit).fillX().uniformX();
+
+        exit.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                Gdx.app.exit();
+            }
+        });
 
         preferences.addListener(new ChangeListener() {
             @Override
@@ -85,13 +93,19 @@ public class MenuScreens implements Screen {
         table.add(btnBack).fillX().uniformX();
 
         // create listeners
-        //btnBack.addListener()
+        btnBack.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                //pbrShader.albedoColor.x=audioSlider.getValue();
+                showMain();
+            }
+        });
 
         audioSlider.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 //pbrShader.albedoColor.x=audioSlider.getValue();
-                System.out.println(audioSlider.getValue());
+                System.out.println(audioSlider.getValue()); //Get Audio Volume from Slider
             }
         });
     }
