@@ -3,7 +3,6 @@ package com.mygdx.game.UI;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
@@ -36,9 +35,8 @@ public class MenuScreens implements Screen {
         table.setDebug(false);
         stage.addActor(table);
 
-        BitmapFont font = new BitmapFont();
-        TextButton.TextButtonStyle textButtonStyle = new TextButton.TextButtonStyle();
-        textButtonStyle.font = font;
+        //create Labels
+        Label titleGameLabel = new Label("Fuadaithe",skin);
 
         //create buttons
         TextButton newGame = new TextButton("New Game", skin);
@@ -46,6 +44,8 @@ public class MenuScreens implements Screen {
         TextButton exit = new TextButton("Exit", skin);
 
         //add buttons to table
+        table.add(titleGameLabel).fillX().uniformX();
+        table.row().spaceTop(20);
         table.add(newGame).fillX().uniformX();
         table.row().pad(10, 0, 10, 0);
         table.add(preferences).fillX().uniformX();
