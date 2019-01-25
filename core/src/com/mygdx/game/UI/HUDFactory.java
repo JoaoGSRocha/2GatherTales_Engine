@@ -2,7 +2,7 @@ package com.mygdx.game.UI;
 
 public class HUDFactory {
 
-    public void createHUDQuestion(Question question){
+    public void createHUDQuestion(String question){
 
     }
 

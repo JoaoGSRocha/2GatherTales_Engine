@@ -1,27 +1,41 @@
 {
-    "response":[
-        {
-            "key" : {
-                "serialnumb": "1",
-                "type": "answer"
-            },
-
-            "question" : "What are you up to?", 
-
-            "answers":{
-                "1" : {
-                  "text": "",
-                  "trigger": ""
-              },
-              "2" : {
-                  "text": "",
-                  "trigger": ""
-              },
-              "3" : {
-                  "text": "",
-                  "trigger": ""
-              }
+  "response": [
+    {
+      "key": {
+        "serialnumb": "1",
+        "type": "answer"
+      },
+      "question": "The Fairy One: Oh my, you are such a cute little bird, would mind making me company?",
+      "answers": {
+        "1": {
+          "text": "a) AHm, I'm headed to the city, I can't stay I am sorry.",
+          "trigger": {
+            "serialnumb": "1",
+            "type": "answer"
           }
+        },
+        "2": {
+          "text": "b) Sure, why not.",
+          "trigger": {
+            "serialnumb": "1",
+            "type": "answer"
+          }
+        },
+        "3": {
+          "text": "c) Buzz off, I have more to do...I am A HERO!",
+          "trigger": {
+            "serialnumb": "2",
+            "type": "answer"
+          }
+        },
+        "4": {
+          "text": "d) (Sits next to fairy without saying a word)",
+          "trigger": {
+            "serialnumb": "2",
+            "type": "answer"
+          }
+        }
       }
+    }
   ]
 }

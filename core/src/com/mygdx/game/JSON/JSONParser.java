@@ -3,6 +3,8 @@ package com.mygdx.game.JSON;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
+import com.mygdx.game.Model.Parser.Answer;
+import com.mygdx.game.Model.Parser.Key;
 import com.mygdx.game.Model.Parser.Response;
 import com.mygdx.game.Model.TestModel;
 import com.mygdx.game.UI.ButtonFactory;
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 public class JSONParser {
 
     ArrayList<Response> response_al = new ArrayList<Response>();
+    ArrayList<Answer> answer_al = new ArrayList<Answer>();
     Response responseObj;
     TestModel testModel;
 
@@ -22,54 +25,113 @@ public class JSONParser {
     ButtonFactory buttonFactory;
 
     public JSONParser() {
-    }
+        for (JsonValue _responseJSON : base.get("response")) {
+            Response _response = new Response();
+            Key key = new Key();
 
-    public JSONParser(Response response) {
-        String type = response.getKey().getType();
+            JsonValue _key = _responseJSON.get("key");
+            key.setType(_key.getString("type"));
+            key.setType(_key.getString("serialnumb"));
 
-        for (JsonValue _response : base.get("response")) {
-            System.out.println(_response.getString("question"));
-            for (JsonValue _key : _response.get("Key")) {
-                System.out.println(_key.getString("type"));
-                System.out.println(_key.getInt("serialnumb"));
-            }
-            //For each element of the ArrayList
-            //decide which buttonFactory to call
-            switch (type) {
-                case ("answer"):
-                    buttonFactory.createAnswerButton_Al(response.getAnswer_al());
-                    break;
-                case ("cinematic"):
-                    buttonFactory.createAnswerButton_Al(response.getAnswer_al());
-                    break;
-                case ("settings"):
-                    buttonFactory.createAnswerButton_Al(response.getAnswer_al());
-                    break;
-                case ("mainmenu"):
-                    buttonFactory.createAnswerButton_Al(response.getAnswer_al());
-                    break;
+            if (_responseJSON.get("answers") != null) {
+                for (JsonValue _answer : _responseJSON.get("answers")) {
+                    Answer answer = new Answer();
+                    answer.setText(_answer.getString("text"));
+
+                    //Create Key based on arguemtns
+                    JsonValue _triggerKey = _answer.get("trigger");
+                    Key triggerKey = new Key();
+                    triggerKey.setSerialnumber(_triggerKey.getInt(
+                            "serialnumb"));
+                    triggerKey.setType(_triggerKey.getString("type"));
+                    System.out.println(triggerKey.getSerialnumber() + "  " + triggerKey.getType());
+
+                    //for Cinematics
+
+                    //for Settings
+
+                    //for mainMenu
+                }
             }
         }
     }
 
-    public void load() {
+    public JSONParser(Response response) {
+            String type = response.getKey().getType();
 
-        Response resposta = new Response();
+            for (JsonValue _responseJSON : base.get("response")) {
+                Response _response = new Response();
+                Key key = new Key();
 
-        System.out.println(base);
+                for (JsonValue _key : _responseJSON.get("Key")) {
+                    key.setType(_key.getString("type"));
+                    key.setType(_key.getString("serialnumb"));
+                }
 
-        //get the component values
-        JsonValue response = base.get("response").get(0);
+                if(_responseJSON.getString("answers")!= null){
+                    for(JsonValue _answer : _responseJSON.get("answers")){
+                        Answer answer = new Answer();
+                        answer.setText(_answer.getString("text"));
 
-        //print class value to console
-        System.out.println(response.getString("question"));
+                        //Create Key based on arguemtns
+                        for(JsonValue _triggerKey : _responseJSON.get("trigger")) {
+                            Key triggerKey = new Key();
+                            triggerKey.setSerialnumber(_triggerKey.getInt(
+                                    "serialnumb"));
+                            triggerKey.setType(_triggerKey.getString("type"));
+                            System.out.println(triggerKey.getSerialnumber()+"  "+triggerKey.getType());
+                        }
+                    }
 
-        System.out.println(response.get("answers"));
+                    //for Cinematics
 
-        System.out.println(response.get("triggers"));
+                    //for Settings
 
-        //JsonValue Answers = base.get("responseObj").get(0);
-        // System.out.println(Answers.getString("triggers"));
+                    //for mainMenu
+                }
+
+
+                //For each element of the ArrayList
+                //decide which buttonFactory to call
+                switch (type) {
+                    case ("answer"):
+                        buttonFactory
+                                .createAnswerButton_Al(
+                                        response.getAnswer_al());
+                        break;
+                    case ("cinematic"):
+                        buttonFactory
+                                .createCinematicButton_Al(
+                                        response.getCinematic_al());
+                        break;
+                    case ("settings"):
+                        buttonFactory
+                                .createAnswerButton_Al(
+                                        response.getAnswer_al());
+                        break;
+                    case ("mainmenu"):
+                        buttonFactory
+                                .createAnswerButton_Al(
+                                        response.getAnswer_al());
+                        break;
+                }
+            }
+        }
+
+        public void load() {
+
+            Response resposta = new Response();
+
+
+            //get the component values
+            JsonValue response = base.get("response").get(0);
+
+            //print class value to console
+
+
+
+            //JsonValue Answers = base.get("responseObj").get(0);
+            // System.out.println(Answers.getString("triggers"));
+        }
     }
-}
 
