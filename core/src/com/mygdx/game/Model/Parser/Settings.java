@@ -1,4 +1,4 @@
 package com.mygdx.game.Model.Parser;
 
-public class Trigger {
+public class Settings {
 }
