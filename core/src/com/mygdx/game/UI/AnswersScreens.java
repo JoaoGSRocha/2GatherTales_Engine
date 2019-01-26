@@ -27,11 +27,11 @@ public class AnswersScreens implements Screen {
     private ArrayList<TextButton> buttonsAl;
     Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
 
-    public AnswersScreens(Game2D game, HashMap<Key, Answer> answersAl, String key) {
+    public AnswersScreens(Game2D game, ArrayList<Answer> answersAl, int key) {
         parent = game;
 
         buttonFactory = new ButtonFactory();
-        buttonsAl = buttonFactory.createAnswerButton_Al(answersAl);
+        buttonsAl = buttonFactory.createAnswerButton_Al(answersAl,key);
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
     }

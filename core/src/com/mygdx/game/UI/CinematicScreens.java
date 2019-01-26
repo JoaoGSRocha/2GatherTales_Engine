@@ -9,6 +9,10 @@ import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
+import com.mygdx.game.Model.Parser.Cinematic;
+import org.omg.CORBA.INTERNAL;
+
+import java.util.ArrayList;
 
 import static com.badlogic.gdx.Gdx.gl;
 
@@ -19,10 +23,12 @@ public class CinematicScreens implements Screen {
     private Actor dialogRect;
     private TextButton homeButton;
     private Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
-    private Label label = new Label("Text goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swear",skin);
+    private Label label;
 
-    public CinematicScreens(Game2D game/*, ArrayList<Cinematic> cinematicAl, String key*/) {
+    public CinematicScreens(Game2D game, ArrayList<Cinematic> cinematicAl, int key) {
         parent = game;
+
+        label = new Label(cinematicAl.get(key).getText(),skin);
 
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
