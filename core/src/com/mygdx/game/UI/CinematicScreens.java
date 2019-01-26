@@ -45,6 +45,7 @@ public class CinematicScreens implements Screen {
         label.setWidth(Gdx.graphics.getWidth()); // Set the width directly
         label.pack(); // Label calculates it's height here, but resets width to 0 (bug?)
         label.setWidth(Gdx.graphics.getWidth()); // Set width again
+        label.setX(15);
         stage.addActor(label);
     }
 
@@ -53,7 +54,7 @@ public class CinematicScreens implements Screen {
     public void render(float delta) {
         gl.glClearColor(0f, 0f, 0f, 1);
         gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        label.setWidth(Gdx.graphics.getWidth());
+        label.setWidth(Gdx.graphics.getWidth()-30);
         label.setY(20f);
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
         stage.draw();
