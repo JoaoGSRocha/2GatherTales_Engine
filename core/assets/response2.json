@@ -1,5 +1,4 @@
-{
-  "response": [
+[
     {
       "key": {
         "serialnumb": "1",
@@ -283,5 +282,4 @@
         "type": "answer"
       }
     }
-  ]
-}
+]

@@ -6,6 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.mygdx.game.Model.Parser.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 class CoordsCalc {
     private static  final int START_X_VAL = 500;
@@ -14,7 +15,7 @@ class CoordsCalc {
     private static  final int INC_Y_VAL = 40;
 
     public ArrayList<ButtonPosition> giveButtonPosition_AL(
-            ArrayList<Answer> answer_al){
+            HashMap<Key, Answer> answer_al){
         ArrayList<ButtonPosition> buttonPosition_al =
                 new ArrayList<ButtonPosition>();
         ButtonPosition buttonPosition;
@@ -39,7 +40,7 @@ public class ButtonFactory {
     UI_Logic ui_logic = new UI_Logic();
 
 
-    public ArrayList<TextButton> createAnswerButton_Al(final ArrayList<Answer> answer_al) {
+    public ArrayList<TextButton> createAnswerButton_Al(final HashMap<Key, Answer> answer_al) {
         ArrayList<TextButton> textButtonAl = new ArrayList<TextButton>();
         ArrayList<ButtonPosition> buttonPosition_al =
                 new CoordsCalc().giveButtonPosition_AL(answer_al);

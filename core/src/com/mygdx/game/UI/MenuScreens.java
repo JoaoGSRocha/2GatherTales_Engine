@@ -11,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.Game2D;
+import com.mygdx.game.JSON.JSONParser;
 
 public class MenuScreens implements Screen {
 
@@ -62,6 +63,7 @@ public class MenuScreens implements Screen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 parent.changeScreen(parent.CINEMATIC_SCREEN);
+                new JSONParser();
             }
         });
 

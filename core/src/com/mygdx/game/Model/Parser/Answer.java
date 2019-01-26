@@ -1,6 +1,6 @@
 package com.mygdx.game.Model.Parser;
 
-public class Answer  implements Triggerable {
+public class Answer extends Response implements Triggerable {
     private String text;
     private Key triggerKey;
 
