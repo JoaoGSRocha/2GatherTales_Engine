@@ -46,7 +46,6 @@ public class Game2D extends Game {
 		ui_render.stage_Init();*/
 
 		JSONParser jsonParser = new JSONParser();
-		jsonParser.load();
 
 		mainScreen = new MenuScreens(this);
 		this.setScreen(mainScreen);
