@@ -12,11 +12,15 @@ public class Game2D extends Game {
 	public final static int MAIN_MENU = 0;
 	public final static int CINEMATIC_SCREEN = 1;
 
+
+	public final static String gameName = "Fuadaithe";
+
 	private Screen mainScreen;
 	private Screen cinematicScreen;
 
 	@Override
 	public void create() {
+		Gdx.graphics.setTitle(gameName);
 		Gdx.graphics.setResizable(false);
 		Gdx.graphics.setWindowedMode(1000,563);
 
