@@ -1,12 +1,15 @@
 package com.mygdx.game.Model.Parser;
 
-public class Answer  implements Triggerable {
+import com.mygdx.game.JSON.JSONParser;
+
+public class Answer  {
     private String text;
     private Key triggerKey;
     private  Integer serialnumber;
     private String type;
 
     public Integer getSerialnumber() {
+
         return serialnumber;
     }
 
@@ -30,12 +33,12 @@ public class Answer  implements Triggerable {
         this.text = text;
     }
 
-    @Override
+
     public Key getTriggerKey() {
         return triggerKey;
     }
 
-    @Override
+
     public void setTriggerKey(Key key) {
 
     }
