@@ -9,9 +9,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
-import com.mygdx.game.Model.Parser.Cinematic;
-
-import java.util.ArrayList;
 
 import static com.badlogic.gdx.Gdx.gl;
 
@@ -20,6 +17,7 @@ public class CinematicScreens implements Screen {
     private Game2D parent;
     private Stage stage;
     private Actor dialogRect;
+    private TextButton homeButton;
     private Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
     private Label label = new Label("Text goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swear",skin);
 
@@ -33,6 +31,12 @@ public class CinematicScreens implements Screen {
     @Override
     public void show() {
         label.setWrap(true);
+
+        dialogRect = new DialogRect();
+        stage.addActor(dialogRect);
+
+        homeButton = new ButtonFactory().createBacktoMainButton(parent);
+        stage.addActor(homeButton);
 
         // Pack label
         label.pack(); // This might not be necessary, unless you're changing other attributes such as font scale.

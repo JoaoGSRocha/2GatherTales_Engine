@@ -30,7 +30,9 @@ public class DialogRect extends Actor {
             gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
             shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
             shapeRenderer.setColor(new Color(.3f, .3f, 1.0f, 0.5f));
-            shapeRenderer.rect(50, 50, 50, 50);
+            int height = Gdx.graphics.getHeight();
+            int width = Gdx.graphics.getWidth();
+            shapeRenderer.rect(0, 0, width, 100);
             shapeRenderer.end();
             gl.glDisable(GL20.GL_BLEND);
             batch.begin();

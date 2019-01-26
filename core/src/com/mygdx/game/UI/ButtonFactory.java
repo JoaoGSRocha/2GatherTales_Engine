@@ -1,8 +1,10 @@
 package com.mygdx.game.UI;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.*;
 
 import java.util.ArrayList;
@@ -81,5 +83,17 @@ public class ButtonFactory {
     public ArrayList<TextButton> createMainMenuButton_Al(ArrayList<MainMenu> mainMenus){
         ArrayList<TextButton> textButtons = new ArrayList<TextButton>();
         return textButtons;
+    }
+
+
+    public TextButton createBacktoMainButton(Game2D parent){
+        TextButton button = new UI_Logic().createButton("Home", new float[]{0, Gdx.graphics.getHeight()-20},
+            new ChangeListener() {
+                @Override
+                public void changed(ChangeEvent event, Actor actor) {
+                        parent.changeScreen(Game2D.MAIN_MENU);
+                    }
+                });
+        return button;
     }
 }
