@@ -1,9 +1,10 @@
-[
+{
+  "response": [
     {
-      "key": {
+    
         "serialnumb": "1",
-        "type": "cinematic"
-      },
+        "type": "cinematic",
+   
       "text": "In the woods of Jimali there are many random encounters that players face when they cross it...if the dice are forgiving they will be blessed with a clean path to the other side of the kingdom, but if not they might be traped forever....but in some cases this might be good...THere are creatures roaming free on the woods, there are have been many kind but at the moment only a few survived, through the emanicipation of the OUR (Organization of the United Races, composed by Half-Orcs, Humans, Elfs, Dwarves, Gnomes and Halflings), since these conquered the free lands with few exceptions, so the few who survived where either too rapid on their reproduction to be able to be extint or dissipated to other lands or were charismatic enough....to manage to be left alone....Skogra \"Mistress of the Forest\", Leana-Sidhe (Human/Fairy Lover), Naiad Fountain Spring Nymph",
       "trigger": {
         "serialnumb": "2",
@@ -282,4 +283,5 @@
         "type": "answer"
       }
     }
-]
+  ]
+}

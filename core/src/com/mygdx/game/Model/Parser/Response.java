@@ -8,16 +8,14 @@ import java.util.HashMap;
 public class Response implements Disposable {
 
     private Key key;
-    private String text;
     private HashMap<Key, Answer> answer_al;
     private ArrayList<Cinematic> cinematic_al;
     private ArrayList<MainMenu> mainMenu_al;
     private ArrayList<Settings> settings_al;
-    private Key triggerkey;
+    private  Integer serialnumber;
+    private String type;
 
-    public Key getKey() { return key; }
 
-    public void setKey(Key key) { this.key = key; }
 
     public HashMap<Key, Answer> getAnswer_al() { return answer_al; }
 
@@ -41,6 +39,22 @@ public class Response implements Disposable {
 
     public void setSettings_al(ArrayList<Settings> settings_al) {
         this.settings_al = settings_al;
+    }
+
+    public Integer getSerialnumber() {
+        return serialnumber;
+    }
+
+    public void setSerialnumber(Integer serialnumber) {
+        this.serialnumber = serialnumber;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override

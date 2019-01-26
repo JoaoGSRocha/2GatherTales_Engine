@@ -25,7 +25,6 @@ public class Game2D extends Game {
 		Gdx.graphics.setWindowedMode(1000,563);
 
 		JSONParser jsonParser = new JSONParser();
-		jsonParser.load();
 
 		mainScreen = new MenuScreens(this);
 		this.setScreen(mainScreen);
