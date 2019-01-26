@@ -38,11 +38,9 @@ public class AnswersScreens implements Screen {
 
     @Override
     public void show() {
-        dialogRect = new DialogRect();
-        stage.addActor(dialogRect);
-
-        Label dialogText = new Label("Text goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swear",skin);
-        stage.addActor(dialogText);
+        for(TextButton button: buttonsAl){
+            stage.addActor(button);
+        }
     }
 
 
