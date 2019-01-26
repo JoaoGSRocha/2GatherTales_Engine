@@ -7,6 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.*;
 
+import javax.xml.soap.Text;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -16,18 +17,15 @@ class CoordsCalc {
     private static  final int INC_X_VAL = 0;
     private static  final int INC_Y_VAL = 40;
 
-    public ArrayList<ButtonPosition> giveButtonPosition_AL(
-            HashMap<Key, Question> answer_al){
+    public ArrayList<ButtonPosition> giveButtonPosition_AL(){
         ArrayList<ButtonPosition> buttonPosition_al =
                 new ArrayList<ButtonPosition>();
         ButtonPosition buttonPosition;
 
-        int counter = 0;
-        for (int i=0; i<answer_al.size(); i++){
+        for (int i=0; i<4; i++){
             buttonPosition = new ButtonPosition(
-                    START_X_VAL + INC_X_VAL * counter,
-                    START_Y_VAL + INC_Y_VAL * counter);
-            counter++;
+                    START_X_VAL + INC_X_VAL * i,
+                    START_Y_VAL + INC_Y_VAL * i);
             buttonPosition_al.add(buttonPosition);
         }
 
@@ -42,7 +40,7 @@ public class ButtonFactory {
     UI_Logic ui_logic = new UI_Logic();
 
 
-    public ArrayList<TextButton> createAnswerButton_Al(final HashMap<Key, Question> answer_al) {
+    /*public ArrayList<TextButton> createAnswerButton_Al(final HashMap<Key, Answer> answer_al) {
         ArrayList<TextButton> textButtonAl = new ArrayList<TextButton>();
         ArrayList<ButtonPosition> buttonPosition_al =
                 new CoordsCalc().giveButtonPosition_AL(answer_al);
@@ -68,6 +66,27 @@ public class ButtonFactory {
             textButtonAl.add(button);
         }
         return textButtonAl;
+    }*/
+
+    public ArrayList<TextButton> createAnswerButton_Al(ArrayList<Answer> answersAl, int questionKey){
+        ArrayList<TextButton> textButtonsAl = new ArrayList<TextButton>();
+        int key = questionKey -1;
+        CoordsCalc coordsCalc = new CoordsCalc();
+        ArrayList<ButtonPosition> buttonPositionAl = coordsCalc.giveButtonPosition_AL();
+        for(int x=key*4;x<(key*4)+4;x++){
+            int count = 0;
+            final int curX = x;
+            TextButton button = ui_logic.createButton(answersAl.get(x).getText(),new float[]{buttonPositionAl.get(count).getPos_X(), buttonPositionAl.get(count).getPos_Y()},new ChangeListener() {
+                @Override
+                public void changed(ChangeEvent event, Actor actor) {
+                    //ChangedAnswers(a);
+                    Key key = answersAl.get(curX).getTriggerKey();
+                }
+            });
+            textButtonsAl.add(button);
+            count++;
+        }
+        return textButtonsAl;
     }
 
     public ArrayList<TextButton> createCinematicButton_Al(ArrayList<Cinematic> cinematic_al){

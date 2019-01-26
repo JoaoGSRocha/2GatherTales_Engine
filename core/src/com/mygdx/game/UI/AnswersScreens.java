@@ -7,8 +7,10 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
-import com.mygdx.game.Model.Parser.Question;
+import com.mygdx.game.Model.Parser.Answer;
+import com.mygdx.game.Model.Parser.Cinematic;
 import com.mygdx.game.Model.Parser.Key;
 
 import java.util.ArrayList;
@@ -25,11 +27,11 @@ public class AnswersScreens implements Screen {
     private ArrayList<TextButton> buttonsAl;
     Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
 
-    public AnswersScreens(Game2D game, HashMap<Key, Question> answersAl, String key) {
+    public AnswersScreens(Game2D game, ArrayList<Answer> answersAl, int key) {
         parent = game;
 
         buttonFactory = new ButtonFactory();
-        buttonsAl = buttonFactory.createAnswerButton_Al(answersAl);
+        buttonsAl = buttonFactory.createAnswerButton_Al(answersAl,key);
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
     }

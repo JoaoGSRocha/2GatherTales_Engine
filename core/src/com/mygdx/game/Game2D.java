@@ -42,7 +42,7 @@ public class Game2D extends Game {
 				this.setScreen(mainScreen);
 				break;
 			case CINEMATIC_SCREEN:
-				cinematicScreen = new CinematicScreens(this);
+				cinematicScreen = new CinematicScreens(this, JSONParser.cinematics, 0);
 				this.setScreen(cinematicScreen);
 				break;
 		}
