@@ -1,6 +1,8 @@
 package com.mygdx.game.UI;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.Graphics.DisplayMode;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -29,6 +31,8 @@ public class MenuScreens implements Screen {
     }
 
     public void showMain(){
+
+        Gdx.graphics.setResizable(false);
         stage.clear();
         Table table = new Table();
         table.setFillParent(true);

@@ -20,7 +20,8 @@ public class CinematicScreens implements Screen {
     private Game2D parent;
     private Stage stage;
     private Actor dialogRect;
-    Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
+    private Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
+    private Label label = new Label("Text goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swearText goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swear",skin);
 
     public CinematicScreens(Game2D game/*, ArrayList<Cinematic> cinematicAl, String key*/) {
         parent = game;
@@ -31,11 +32,16 @@ public class CinematicScreens implements Screen {
 
     @Override
     public void show() {
-        dialogRect = new DialogRect();
-        stage.addActor(dialogRect);
+        label.setWrap(true);
 
-        Label dialogText = new Label("Text goes here test how long can this be lmao ok lorem ipsum no really why am I still writing lol ok I'll stop I swear",skin);
-        stage.addActor(dialogText);
+        // Pack label
+        label.pack(); // This might not be necessary, unless you're changing other attributes such as font scale.
+
+        // Manual sizing
+        label.setWidth(Gdx.graphics.getWidth()); // Set the width directly
+        label.pack(); // Label calculates it's height here, but resets width to 0 (bug?)
+        label.setWidth(Gdx.graphics.getWidth()); // Set width again
+        stage.addActor(label);
     }
 
 
@@ -43,7 +49,8 @@ public class CinematicScreens implements Screen {
     public void render(float delta) {
         gl.glClearColor(0f, 0f, 0f, 1);
         gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
+        label.setWidth(Gdx.graphics.getWidth());
+        label.setY(20f);
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
         stage.draw();
     }
