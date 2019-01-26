@@ -52,6 +52,13 @@ public class MenuScreens implements Screen {
         table.row();
         table.add(exit).fillX().uniformX();
 
+        newGame.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                parent.changeScreen(parent.CINEMATIC_SCREEN);
+            }
+        });
+
         exit.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {

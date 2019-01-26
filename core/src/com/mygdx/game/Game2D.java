@@ -3,24 +3,26 @@ package com.mygdx.game;
 import java.util.Map;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector3;
 import com.mygdx.game.JSON.JSONParser;
 import com.mygdx.game.Model.PlayerCursor;
+import com.mygdx.game.UI.CinematicScreens;
 import com.mygdx.game.UI.MenuScreens;
 import com.mygdx.game.UI.UI_Render;
 
 public class Game2D extends Game {
 
+	public final static int MAIN_MENU = 0;
+	public final static int CINEMATIC_SCREEN = 1;
+
 	private Screen mainScreen;
+	private Screen cinematicScreen;
 	private SpriteBatch batch;
 	private OrthographicCamera camera;
 	private Rectangle currMousePos;
@@ -123,5 +125,22 @@ public class Game2D extends Game {
 		/*batch.dispose();
 		anim.dispose();
 		spriteAnim.dispose();*/
+	}
+
+	public void changeScreen(int screen){
+		switch(screen){
+			case MAIN_MENU:
+				if (mainScreen == null){
+					mainScreen = new MenuScreens(this);
+				}
+				this.setScreen(mainScreen);
+				break;
+			case CINEMATIC_SCREEN:
+				if (cinematicScreen == null){
+					cinematicScreen = new CinematicScreens(this);
+				}
+				this.setScreen(cinematicScreen);
+				break;
+		}
 	}
 }
