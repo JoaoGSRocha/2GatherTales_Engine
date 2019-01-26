@@ -2,24 +2,27 @@ package com.mygdx.game;
 
 import java.util.Map;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector3;
 import com.mygdx.game.JSON.JSONParser;
 import com.mygdx.game.Model.PlayerCursor;
-import com.mygdx.game.Model.Screen;
+import com.mygdx.game.UI.CinematicScreens;
+import com.mygdx.game.UI.MenuScreens;
 import com.mygdx.game.UI.UI_Render;
 
-public class Game2D extends ApplicationAdapter {
+public class Game2D extends Game {
 
-	private Screen screen;
+	public final static int MAIN_MENU = 0;
+	public final static int CINEMATIC_SCREEN = 1;
+
+	private Screen mainScreen;
+	private Screen cinematicScreen;
 	private SpriteBatch batch;
 	private OrthographicCamera camera;
 	private Rectangle currMousePos;
@@ -35,15 +38,21 @@ public class Game2D extends ApplicationAdapter {
 	UI_Render ui_render;
 
 
+
 	@Override
 	public void create() {
-		playerCursor = new PlayerCursor();
+		/*playerCursor = new PlayerCursor();
 		ui_render = new UI_Render();
-		ui_render.stage_Init();
+		ui_render.stage_Init();*/
 
 		JSONParser jsonParser = new JSONParser();
 		jsonParser.load();
 
+		mainScreen = new MenuScreens(this);
+		this.setScreen(mainScreen);
+
+
+		/*
 		playerCursor.setPositionX(350);
 		playerCursor.setPositionY(220);
 
@@ -63,16 +72,17 @@ public class Game2D extends ApplicationAdapter {
 
 		// create a Rectangle to logically represent the bucket
         //If I ever need to detect collision of cursor against a button
+		/*
 		currMousePos = playerCursor.cursorRectangle();
 
 		anim = new Animator();
 		spriteAnim = new SpriteAnimation();
 		anim.create();
-		spriteAnim.create();
+		spriteAnim.create();*/
 	}
 
 
-
+/*
 	@Override
 	public void render() {
 
@@ -108,12 +118,29 @@ public class Game2D extends ApplicationAdapter {
 			playerCursor.setPositionY(touchPos.y-25);
 		}
 	}
-
+*/
 	@Override
 	public void dispose() {
 		// dispose of all the native resources
-		batch.dispose();
+		/*batch.dispose();
 		anim.dispose();
-		spriteAnim.dispose();
+		spriteAnim.dispose();*/
+	}
+
+	public void changeScreen(int screen){
+		switch(screen){
+			case MAIN_MENU:
+				if (mainScreen == null){
+					mainScreen = new MenuScreens(this);
+				}
+				this.setScreen(mainScreen);
+				break;
+			case CINEMATIC_SCREEN:
+				if (cinematicScreen == null){
+					cinematicScreen = new CinematicScreens(this);
+				}
+				this.setScreen(cinematicScreen);
+				break;
+		}
 	}
 }
