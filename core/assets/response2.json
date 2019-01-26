@@ -3,6 +3,17 @@
     {
       "key": {
         "serialnumb": "1",
+        "type": "cinematic"
+      },
+      "text": "In the woods of Jimali there are many random encounters that players face when they cross it...if the dice are forgiving they will be blessed with a clean path to the other side of the kingdom, but if not they might be traped forever....but in some cases this might be good...THere are creatures roaming free on the woods, there are have been many kind but at the moment only a few survived, through the emanicipation of the OUR (Organization of the United Races, composed by Half-Orcs, Humans, Elfs, Dwarves, Gnomes and Halflings), since these conquered the free lands with few exceptions, so the few who survived where either too rapid on their reproduction to be able to be extint or dissipated to other lands or were charismatic enough....to manage to be left alone....Skogra \"Mistress of the Forest\", Leana-Sidhe (Human/Fairy Lover), Naiad Fountain Spring Nymph",
+      "trigger": {
+        "serialnumb": "2",
+        "type": "answer"
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "2",
         "type": "answer"
       },
       "question": "The Fairy One: Oh my, you are such a cute little bird, would mind making me company?",
@@ -10,31 +21,266 @@
         "1": {
           "text": "a) AHm, I'm headed to the city, I can't stay I am sorry.",
           "trigger": {
-            "serialnumb": "1",
+            "serialnumb": "3",
             "type": "answer"
           }
         },
         "2": {
           "text": "b) Sure, why not.",
           "trigger": {
-            "serialnumb": "1",
+            "serialnumb": "3",
             "type": "answer"
           }
         },
         "3": {
           "text": "c) Buzz off, I have more to do...I am A HERO!",
           "trigger": {
-            "serialnumb": "2",
+            "serialnumb": "3",
             "type": "answer"
           }
         },
         "4": {
           "text": "d) (Sits next to fairy without saying a word)",
           "trigger": {
-            "serialnumb": "2",
+            "serialnumb": "3",
             "type": "answer"
           }
         }
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "3",
+        "type": "answer"
+      },
+      "question": "Yeeeey....thank you, I can feel so lonely on these parts....I really would like to share all the time I can with you....",
+      "answers": {
+        "1": {
+          "text": "a)...Ok...that might be a bit too much....",
+          "trigger": {
+            "serialnumb": "4",
+            "type": "cinematic"
+          }
+        },
+        "2": {
+          "text": "b) Really, well with a cute fairy like you I sure do not mind...",
+          "trigger": {
+            "serialnumb": "4",
+            "type": "cinematic"
+          }
+        },
+        "3": {
+          "text": "c) AHrrrrr I am regreting this already!! That's it I'm walking!",
+          "trigger": {
+            "serialnumb": "4",
+            "type": "cinematic"
+          }
+        },
+        "4": {
+          "text": "d) (Nods and smiles to the fairy listening to what she has to say)",
+          "trigger": {
+            "serialnumb": "4",
+            "type": "cinematic"
+          }
+        }
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "4",
+        "type": "cinematic"
+      },
+      "text": "Bleh....You trully are pathetic....I might as well leave you to the beasts...boys he's no good you can have them....(With that you hear nothing but the sound of wolves surrounding you, appearing from all sides, to what now it seems they were there all long camouflaged among the woods waiting for her signal to crave on your meat....you defend yourself heroic...to become today's wolf dinner...rest in peace and in warm tummies hero...) \n Oh please, I can't take this lonesome for this long, please let me aid you, I will be your guide in these forest...anything but this misery I feel.(She follows you and aids you and you realize she is a level 15 wizard while yourself only but a lvl 3 fighter, realize having her on your side is quite the boost and think to yourself your Game Master clearly did not realize you could outsmart him in a duel of diplomatic whims)\n",
+      "trigger": {
+        "serialnumb": "5",
+        "type": "answer"
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "5",
+        "type": "answer"
+      },
+      "question": "Skogra (Between the trees you see once again the really beautiful woman with her long gown, smiling you at you from afar, perplexed by her beauty you decide...)",
+      "answers": {
+        "1": {
+          "text": "a) To keep on moving and pretend you didnt noticed she was there.",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "2": {
+          "text": "b) To get closer to see better how does she look (You notice her tail, it seems to be of a fox) (What to you do?)",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "3": {
+          "text": "a.2 smile at her and ask her if she happens to know where are the directions to the out of the forest",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "4": {
+          "text": "b.2 you smile and call her sexy doll, what are such a fine creature like yourself doing over here...wanna entangle me and you on your tail...",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "5": {
+          "text": "c.2 What's that? (Points to the tail)",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "6": {
+          "text": "d.2 Politely and very formal compliments the Beatutiful tailed creatured wihouth glancing at her tail with a very welcoming smile)",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "7": {
+          "text": "c) To move past her and ignore her as it is the shortest route to your journey",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        },
+        "8": {
+          "text": "d) To wave at her and smile back",
+          "trigger": {
+            "serialnumb": "6",
+            "type": "answer"
+          }
+        }
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "6",
+        "type": "answer"
+      },
+      "question": "Hi...what a great loooking fella like yourself is doing in such a deep forest...do you need some help? (She moves to caress your arm as she asks)",
+      "answers": {
+        "1": {
+          "text": "a) I am just passing by to get to the other side of the Forest, nothing special",
+          "trigger": {
+            "serialnumb": "7",
+            "type": "answer"
+          }
+        },
+        "2": {
+          "text": "b) Of course...please do, I am trying to reach the other side of the forest, but who is in a rush really?",
+          "trigger": {
+            "serialnumb": "7",
+            "type": "answer"
+          }
+        },
+        "3": {
+          "text": "c) Oh you bloody creatures all into touching and mouth on mouth gritty business! Ya'll keep it to yourselves would yah!?",
+          "trigger": {
+            "serialnumb": "7",
+            "type": "answer"
+          }
+        },
+        "4": {
+          "text": "d) (You put your wand in your chest give a suprised look in your face and say: awwwww)(Response to it) she is suprised but she smiles back)",
+          "trigger": {
+            "serialnumb": "7",
+            "type": "answer"
+          }
+        }
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "7",
+        "type": "answer"
+      },
+      "question": "Naiad: As you reaching to what it seems to you close to the end of your path you find a beautiful woman bathing her feet on the water, sitting making you feel a bit wowed by her majestic looks...You know she will notice you if you keep on moving to your goals so:",
+      "answers": {
+        "1": {
+          "text": "a) Keeps on walking passing by her, and saying \"HOwd'ya?\" till you get to your goal.",
+          "trigger": {
+            "serialnumb": "8",
+            "type": "answer"
+          }
+        },
+        "2": {
+          "text": "b) Make a bow and ask her \"what is the name of the one princess I witness before me\".",
+          "trigger": {
+            "serialnumb": "8",
+            "type": "answer"
+          }
+        },
+        "3": {
+          "text": "c) Hey M'am I'm just moving to get to the city I want no trouble. Have a nice day would ya?",
+          "trigger": {
+            "serialnumb": "8",
+            "type": "answer"
+          }
+        },
+        "4": {
+          "text": "d) \"Hello hello, Pardon me my lady, ahm I am deeply sorry but I meant to go in that direction, I see no other way of reaching it but through this path, if you don't mind I will be on my way.\"",
+          "trigger": {
+            "serialnumb": "8",
+            "type": "answer"
+          }
+        }
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "8",
+        "type": "answer"
+      },
+      "question": "(She stares at your wounds, and she moves towards you quite rapid. What do you do)",
+      "answers": {
+        "1": {
+          "text": "a) Wave my sword at her and say. Hey calm down, I mean no trouble, just moving to get to the city m'am.",
+          "trigger": {
+            "serialnumb": "9",
+            "type": "cinematic"
+          }
+        },
+        "2": {
+          "text": "b) Delighted you move your arm to caress her waist.",
+          "trigger": {
+            "serialnumb": "9",
+            "type": "cinematic"
+          }
+        },
+        "3": {
+          "text": "c) OH is party that you want...that's yo'll get... CHARGGEEEEE!!!!",
+          "trigger": {
+            "serialnumb": "9",
+            "type": "cinematic"
+          }
+        },
+        "4": {
+          "text": "d) (Wait for her to do her thing and show her a face of worry while you take 2 steps back to show your uncertainty/discomfort) (She reaches your arm and start on passing some water...to what you know can realize it was a cure....all your wounds are healed you feel all comfort imaginable...even more than prior to the quest...)",
+          "trigger": {
+            "serialnumb": "9",
+            "type": "cinematic"
+          }
+        }
+      }
+    },
+    {
+      "key": {
+        "serialnumb": "9",
+        "type": "cinematic"
+      },
+      "text": "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+      "trigger": {
+        "serialnumb": "10",
+        "type": "answer"
       }
     }
   ]
