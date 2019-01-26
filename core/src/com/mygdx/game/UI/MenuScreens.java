@@ -88,7 +88,7 @@ public class MenuScreens implements Screen {
         TextButton btnBack = new TextButton("Back to Menu",skin);
 
         //Create Slider
-        Slider audioSlider = new Slider(0, 1, 0.05f, false, skin);
+        final Slider audioSlider = new Slider(0, 1, 0.05f, false, skin);
 
         //Create Labels
         Label audioLabel = new Label("Sound Volume:",skin);

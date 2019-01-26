@@ -39,7 +39,7 @@ public class ButtonFactory {
     UI_Logic ui_logic = new UI_Logic();
 
 
-    public ArrayList<TextButton> createAnswerButton_Al(ArrayList<Answer> answer_al) {
+    public ArrayList<TextButton> createAnswerButton_Al(final ArrayList<Answer> answer_al) {
         ArrayList<TextButton> textButtonAl = new ArrayList<TextButton>();
         ArrayList<ButtonPosition> buttonPosition_al =
                 new CoordsCalc().giveButtonPosition_AL(answer_al);
@@ -51,7 +51,7 @@ public class ButtonFactory {
           //  Key key = answer_al.get(finalI).getTriggerKey();
             String title = answer_al.get(i).getText();
 
-            int finalI = i;
+            final int finalI = i;
             TextButton button = ui_logic.createButton(title, new float[]{ posX, posY},
             new ChangeListener() {
                 @Override

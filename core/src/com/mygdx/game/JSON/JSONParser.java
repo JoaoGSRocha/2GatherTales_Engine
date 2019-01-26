@@ -20,7 +20,7 @@ public class JSONParser {
     TestModel testModel;
   //  public static ArrayList DataAll;
     JsonReader json = new JsonReader();
-    JsonValue base = json.parse(Gdx.files.internal("response.json"));
+    JsonValue base = json.parse(Gdx.files.internal("response2.json"));
 
     public static ArrayList<Response> AllResponse;
 
