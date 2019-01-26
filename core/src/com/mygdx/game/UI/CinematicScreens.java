@@ -4,8 +4,10 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
@@ -52,6 +54,12 @@ public class CinematicScreens implements Screen {
         label.pack(); // Label calculates it's height here, but resets width to 0 (bug?)
         label.setWidth(Gdx.graphics.getWidth()); // Set width again
         label.setX(15);
+        label.addListener(new ClickListener(){
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                System.out.println("YOU CLOCKED IN THE DIALOG");
+            }
+        });
         stage.addActor(label);
     }
 
