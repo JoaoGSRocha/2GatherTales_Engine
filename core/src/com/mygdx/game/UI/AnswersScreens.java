@@ -12,6 +12,7 @@ import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.Answer;
 import com.mygdx.game.Model.Parser.Cinematic;
 import com.mygdx.game.Model.Parser.Key;
+import com.mygdx.game.Model.Parser.Question;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,11 +28,11 @@ public class AnswersScreens implements Screen {
     private ArrayList<TextButton> buttonsAl;
     Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
 
-    public AnswersScreens(Game2D game, ArrayList<Answer> answersAl, int key) {
+    public AnswersScreens(Game2D game, ArrayList<Question> questionsAl, int key) {
         parent = game;
 
         buttonFactory = new ButtonFactory();
-        buttonsAl = buttonFactory.createAnswerButton_Al(answersAl,key);
+        buttonsAl = buttonFactory.createAnswerButton_Al(parent,questionsAl,key);
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
     }

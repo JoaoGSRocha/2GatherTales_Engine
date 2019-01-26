@@ -72,7 +72,7 @@ public class MenuScreens implements Screen {
         newGame.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                parent.changeScreen(parent.CINEMATIC_SCREEN);
+                parent.changeScreen(parent.CINEMATIC_SCREEN_MAIN);
                 new JSONParser();
             }
         });

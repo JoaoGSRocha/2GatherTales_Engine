@@ -31,56 +31,31 @@ class CoordsCalc {
 
         return buttonPosition_al;
     }
-
-
 }
 
 public class ButtonFactory {
 
     UI_Logic ui_logic = new UI_Logic();
 
-
-    /*public ArrayList<TextButton> createAnswerButton_Al(final HashMap<Key, Answer> answer_al) {
-        ArrayList<TextButton> textButtonAl = new ArrayList<TextButton>();
-        ArrayList<ButtonPosition> buttonPosition_al =
-                new CoordsCalc().giveButtonPosition_AL(answer_al);
-        for(int i = 0; i< buttonPosition_al.size(); i++) {
-
-            float posX = buttonPosition_al.get(i).getPos_X();
-            float posY = buttonPosition_al.get(i).getPos_Y();
-          //  String text = answer_al.get(finalI).getText();
-          //  Key key = answer_al.get(finalI).getTriggerKey();
-            String title = answer_al.get(i).getText();
-
-            final int finalI = i;
-            TextButton button = ui_logic.createButton(title, new float[]{ posX, posY},
-            new ChangeListener() {
-                @Override
-                public void changed(ChangeEvent event, Actor actor) {
-                    //ChangedAnswers(a);
-                    Key key = answer_al.get(finalI).getTriggerKey();
-
-                }
-            });
-
-            textButtonAl.add(button);
-        }
-        return textButtonAl;
-    }*/
-
-    public ArrayList<TextButton> createAnswerButton_Al(ArrayList<Answer> answersAl, int questionKey){
+    public ArrayList<TextButton> createAnswerButton_Al(Game2D parent, ArrayList<Question> questionsAl, int questionKey){
         ArrayList<TextButton> textButtonsAl = new ArrayList<TextButton>();
         int key = questionKey -1;
         CoordsCalc coordsCalc = new CoordsCalc();
         ArrayList<ButtonPosition> buttonPositionAl = coordsCalc.giveButtonPosition_AL();
-        for(int x=key*4;x<(key*4)+4;x++){
+        for(Answer answer : questionsAl.get(questionKey).getAnswers()){
             int count = 0;
-            final int curX = x;
-            TextButton button = ui_logic.createButton(answersAl.get(x).getText(),new float[]{buttonPositionAl.get(count).getPos_X(), buttonPositionAl.get(count).getPos_Y()},new ChangeListener() {
+            TextButton button = ui_logic.createButton(answer.getText(),new float[]{buttonPositionAl.get(count).getPos_X(), buttonPositionAl.get(count).getPos_Y()},new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
-                    //ChangedAnswers(a);
-                    Key key = answersAl.get(curX).getTriggerKey();
+                    switch(answer.getTrigger_type()){
+                        case "cinematic":
+                            parent.changeScreen(parent.CINEMATIC_SCREEN,answer.getTrigger_serialnumber());
+                            break;
+                        case "answers":
+                            parent.changeScreen(parent.ANSWER_SCREEN,answer.getTrigger_serialnumber());
+                            break;
+                    }
+
                 }
             });
             textButtonsAl.add(button);
