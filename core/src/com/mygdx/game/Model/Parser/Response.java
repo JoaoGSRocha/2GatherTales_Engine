@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class Response implements Disposable {
 
     private Key key;
-    private HashMap<Key, Answer> answer_al;
+    private HashMap<Key, Question> answer_al;
     private ArrayList<Cinematic> cinematic_al;
     private ArrayList<MainMenu> mainMenu_al;
     private ArrayList<Settings> settings_al;
@@ -17,9 +17,9 @@ public class Response implements Disposable {
 
 
 
-    public HashMap<Key, Answer> getAnswer_al() { return answer_al; }
+    public HashMap<Key, Question> getAnswer_al() { return answer_al; }
 
-    public void setAnswer_al(HashMap<Key, Answer> answer_al) {
+    public void setAnswer_al(HashMap<Key, Question> answer_al) {
         this.answer_al = answer_al;
     }
 

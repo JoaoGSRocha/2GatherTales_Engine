@@ -17,7 +17,7 @@ class CoordsCalc {
     private static  final int INC_Y_VAL = 40;
 
     public ArrayList<ButtonPosition> giveButtonPosition_AL(
-            HashMap<Key, Answer> answer_al){
+            HashMap<Key, Question> answer_al){
         ArrayList<ButtonPosition> buttonPosition_al =
                 new ArrayList<ButtonPosition>();
         ButtonPosition buttonPosition;
@@ -42,7 +42,7 @@ public class ButtonFactory {
     UI_Logic ui_logic = new UI_Logic();
 
 
-    public ArrayList<TextButton> createAnswerButton_Al(final HashMap<Key, Answer> answer_al) {
+    public ArrayList<TextButton> createAnswerButton_Al(final HashMap<Key, Question> answer_al) {
         ArrayList<TextButton> textButtonAl = new ArrayList<TextButton>();
         ArrayList<ButtonPosition> buttonPosition_al =
                 new CoordsCalc().giveButtonPosition_AL(answer_al);

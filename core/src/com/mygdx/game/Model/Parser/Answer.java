@@ -1,28 +1,22 @@
 package com.mygdx.game.Model.Parser;
 
-import com.mygdx.game.JSON.JSONParser;
-
-public class Answer  {
+public class Answer {
     private String text;
-    private Key triggerKey;
-    private  Integer serialnumber;
-    private String type;
+    private  Integer trigger_serialnumber;
+    private String trigger_type;
 
-    public Integer getSerialnumber() {
+    public Integer getTrigger_serialnumber() { return trigger_serialnumber; }
 
-        return serialnumber;
+    public void setTrigger_serialnumber(Integer trigger_serialnumber) {
+        this.trigger_serialnumber = trigger_serialnumber;
     }
 
-    public void setSerialnumber(Integer serialnumber) {
-        this.serialnumber = serialnumber;
+    public String getTrigger_type() {
+        return trigger_type;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
+    public void setTrigger_type(String trigger_type) {
+        this.trigger_type = trigger_type;
     }
 
     public String getText() {
@@ -31,15 +25,5 @@ public class Answer  {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-
-    public Key getTriggerKey() {
-        return triggerKey;
-    }
-
-
-    public void setTriggerKey(Key key) {
-
     }
 }
