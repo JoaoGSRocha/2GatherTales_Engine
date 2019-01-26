@@ -11,8 +11,10 @@ import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.Answer;
 import com.mygdx.game.Model.Parser.Cinematic;
+import com.mygdx.game.Model.Parser.Key;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static com.badlogic.gdx.Gdx.gl;
 
@@ -25,7 +27,7 @@ public class AnswersScreens implements Screen {
     private ArrayList<TextButton> buttonsAl;
     Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
 
-    public AnswersScreens(Game2D game, ArrayList<Answer> answersAl, String key) {
+    public AnswersScreens(Game2D game, HashMap<Key, Answer> answersAl, String key) {
         parent = game;
 
         buttonFactory = new ButtonFactory();

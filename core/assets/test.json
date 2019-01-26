@@ -1,0 +1,10 @@
+{
+
+    "key" : {
+      "class":  "com.mygdx.game.Model.Parser.Key",
+      "serialnumber": "1",
+      "type" : "answers"
+    },
+
+    "text" : "text"
+}

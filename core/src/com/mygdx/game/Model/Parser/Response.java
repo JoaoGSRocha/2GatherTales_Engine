@@ -3,11 +3,13 @@ package com.mygdx.game.Model.Parser;
 import com.badlogic.gdx.utils.Disposable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Response implements Disposable {
 
     private Key key;
-    private ArrayList<Answer> answer_al;
+    private String text;
+    private HashMap<Key, Answer> answer_al;
     private ArrayList<Cinematic> cinematic_al;
     private ArrayList<MainMenu> mainMenu_al;
     private ArrayList<Settings> settings_al;
@@ -17,9 +19,9 @@ public class Response implements Disposable {
 
     public void setKey(Key key) { this.key = key; }
 
-    public ArrayList<Answer> getAnswer_al() { return answer_al; }
+    public HashMap<Key, Answer> getAnswer_al() { return answer_al; }
 
-    public void setAnswer_al(ArrayList<Answer> answer_al) {
+    public void setAnswer_al(HashMap<Key, Answer> answer_al) {
         this.answer_al = answer_al;
     }
 
