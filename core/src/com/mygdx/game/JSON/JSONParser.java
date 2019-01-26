@@ -18,17 +18,20 @@ public class JSONParser {
     ArrayList<Answer> answer_al = new ArrayList<Answer>();
     Response responseObj;
     TestModel testModel;
-
+  //  public static ArrayList DataAll;
     JsonReader json = new JsonReader();
     JsonValue base = json.parse(Gdx.files.internal("response.json"));
+
+    public static ArrayList<Response> AllResponse;
 
     ButtonFactory buttonFactory;
 
     public JSONParser() {
+
         for (JsonValue _responseJSON : base.get("response")) {
             Response _response = new Response();
             Key key = new Key();
-
+          //  DataAll = _response;
             JsonValue _key = _responseJSON.get("key");
             key.setType(_key.getString("type"));
             key.setType(_key.getString("serialnumb"));
@@ -44,15 +47,22 @@ public class JSONParser {
                     triggerKey.setSerialnumber(_triggerKey.getInt(
                             "serialnumb"));
                     triggerKey.setType(_triggerKey.getString("type"));
-                    System.out.println(triggerKey.getSerialnumber() + "  " + triggerKey.getType());
+
+//                    System.out.println(answer.getText());
+//
+//                    System.out.println(triggerKey.getSerialnumber() + "  " + triggerKey.getType());
 
                     //for Cinematics
+
+
 
                     //for Settings
 
                     //for mainMenu
                 }
             }
+
+            response_al.add(_response);
         }
     }
 
@@ -73,6 +83,7 @@ public class JSONParser {
                         Answer answer = new Answer();
                         answer.setText(_answer.getString("text"));
 
+
                         //Create Key based on arguemtns
                         for(JsonValue _triggerKey : _responseJSON.get("trigger")) {
                             Key triggerKey = new Key();
@@ -81,6 +92,7 @@ public class JSONParser {
                             triggerKey.setType(_triggerKey.getString("type"));
                             System.out.println(triggerKey.getSerialnumber()+"  "+triggerKey.getType());
                         }
+
                     }
 
                     //for Cinematics
@@ -93,28 +105,25 @@ public class JSONParser {
 
                 //For each element of the ArrayList
                 //decide which buttonFactory to call
-                switch (type) {
-                    case ("answer"):
+
+                switch ( response.getKey().getType()){
+                    case "answer":
                         buttonFactory
                                 .createAnswerButton_Al(
                                         response.getAnswer_al());
-                        break;
-                    case ("cinematic"):
+                    case "cinematic":
                         buttonFactory
                                 .createCinematicButton_Al(
                                         response.getCinematic_al());
-                        break;
-                    case ("settings"):
-                        buttonFactory
-                                .createAnswerButton_Al(
-                                        response.getAnswer_al());
-                        break;
-                    case ("mainmenu"):
-                        buttonFactory
-                                .createAnswerButton_Al(
-                                        response.getAnswer_al());
-                        break;
+                    case "settings":
+                        response.getKey().getType();
+                    case "mainMenu":
+                        response.getKey().getType();
+                    default:
+                        System.out.println("default");
                 }
+
+
             }
         }
 

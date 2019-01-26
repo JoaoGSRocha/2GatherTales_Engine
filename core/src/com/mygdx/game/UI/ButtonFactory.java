@@ -3,10 +3,7 @@ package com.mygdx.game.UI;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
-import com.mygdx.game.Model.Parser.Answer;
-import com.mygdx.game.Model.Parser.Cinematic;
-import com.mygdx.game.Model.Parser.MainMenu;
-import com.mygdx.game.Model.Parser.Settings;
+import com.mygdx.game.Model.Parser.*;
 
 import java.util.ArrayList;
 
@@ -50,12 +47,17 @@ public class ButtonFactory {
 
             float posX = buttonPosition_al.get(i).getPos_X();
             float posY = buttonPosition_al.get(i).getPos_Y();
+          //  String text = answer_al.get(finalI).getText();
+          //  Key key = answer_al.get(finalI).getTriggerKey();
             String title = answer_al.get(i).getText();
 
+            int finalI = i;
             TextButton button = ui_logic.createButton(title, new float[]{ posX, posY},
             new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
+                    //ChangedAnswers(a);
+                    Key key = answer_al.get(finalI).getTriggerKey();
 
                 }
             });
