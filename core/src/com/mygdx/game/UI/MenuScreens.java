@@ -1,14 +1,15 @@
 package com.mygdx.game.UI;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Graphics;
-import com.badlogic.gdx.Graphics.DisplayMode;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.Game2D;
 import com.mygdx.game.JSON.JSONParser;
@@ -38,6 +39,7 @@ public class MenuScreens implements Screen {
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(false);
+        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("placeholder.png"))));
         stage.addActor(table);
 
         //create Labels
@@ -88,6 +90,7 @@ public class MenuScreens implements Screen {
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(false);
+        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("placeholder.png"))));
         stage.addActor(table);
 
         //Create Buttons
