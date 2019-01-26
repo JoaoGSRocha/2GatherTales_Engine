@@ -131,7 +131,9 @@ public class MenuScreens implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 //pbrShader.albedoColor.x-=audioSlider.getValue();
                 parent.gameSoundVolume=audioSlider.getValue();
-                sound.setVolume(0, parent.gameSoundVolume);
+                sound.setVolume(0, audioSlider.getValue());
+                parent.prefs.putFloat("gameSoundVolume",audioSlider.getValue());
+                parent.prefs.flush();
             }
         });
     }
