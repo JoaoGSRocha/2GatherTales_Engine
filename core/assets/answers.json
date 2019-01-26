@@ -1,230 +1,259 @@
 {
   "response": [
-        {
-      
-        "serialnumber": "1",
-        "type": "answer",
+    {
+
+      "serialnumber": "1",
+      "type": "answer",
+
 
       "question": "The Fairy One: Oh my, you are such a cute little bird, would mind making me company?",
-      "answers": {
+      "class": "com.mygdx.game.Model.Parser.Question",
+      "answers": [
 
-        "1": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "a) AHm, I'm headed to the city, I can't stay I am sorry.",
 
-           	"trigger_serialnumber": "2",
-            	"trigger_type": "answer"
+          "trigger_serialnumber": "2",
+          "trigger_type": "answer"
         },
 
-        "2": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "b) Sure, why not.",
-           
-	"trigger_serialnumber": "9",
-            	"trigger_type": "cinematic"
+
+          "trigger_serialnumber": "9",
+          "trigger_type": "cinematic"
         },
 
-        "3": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "c) Buzz off, I have more to do...I am A HERO!",
           
-	"trigger_serialnumber": "9",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "9",
+          "trigger_type": "cinematic"
         },
-        "4": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "d) (Sits next to fairy without saying a word)",
-       
-           	"trigger_serialnumber": "5",
-            	"trigger_type": "cinematic"
+
+          "trigger_serialnumber": "5",
+          "trigger_type": "cinematic"
         }
-      }
+      ]
     },
 
     {
 
-        "serialnumber": "2",
-        "type": "answer",
+      "serialnumber": "2",
+      "type": "answer",
+
+
 
       "question": "Yeeeey....thank you, I can feel so lonely on these parts....I really would like to share all the time I can with you....",
-      "answers": {
+      "class": "com.mygdx.game.Model.Parser.Question",
+      "answers": [
 
-        "1": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "a)...Ok...that might be a bit too much....",
           
-	"trigger_serialnumber": "6",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "6",
+          "trigger_type": "cinematic"
         },
 
-        "2": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "b) Really, well with a cute fairy like you I sure do not mind...",
 
-         	"trigger_serialnumber": "7",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "7",
+          "trigger_type": "cinematic"
         },
 
-        "3": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "c) AHrrrrr I am regreting this already!! That's it I'm walking!",
-         
-	"trigger_serialnumber": "7",
-            	"trigger_type": "cinematic"       
- },
 
-        "4": {
+          "trigger_serialnumber": "7",
+          "trigger_type": "cinematic"       
+        },
+
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "d) (Nods and smiles to the fairy listening to what she has to say)",
-         
-        	"trigger_serialnumber": "8",
-            	"trigger_type": "cinematic"
+
+          "trigger_serialnumber": "8",
+          "trigger_type": "cinematic"
         } 
-      }
+      ]
     },
 
     {
 
-        "serialnumb": "3",
-        "type": "answer",
-
+      "serialnumber": "3",
+      "type": "answer",
       "question": "Skogra (Between the trees you see once again the really beautiful woman with her long gown, smiling you at you from afar, perplexed by her beauty you decide...)",
-      "answers": {
+      "class": "com.mygdx.game.Model.Parser.Question",
+      "answers": [
 
-        "1": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "a) To keep on moving and pretend you didnt noticed she was there.",
 
-          	"trigger_serialnumber": "4",
-            	"trigger_type": "answer"
+          "trigger_serialnumber": "4",
+          "trigger_type": "answer"
         },
 
-        "2": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "b) To get closer to see better how does she look (You notice her tail, it seems to be of a fox) (What to you do?)",
 
-          	"trigger_serialnumber": "11",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "11",
+          "trigger_type": "cinematic"
         },
 
-        "3": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "a.2 smile at her and ask her if she happens to know where are the directions to the out of the forest",
 
-          	"trigger_serialnumber": "11",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "11",
+          "trigger_type": "cinematic"
         },
 
-        "4": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "b.2 you smile and call her sexy doll, what are such a fine creature like yourself doing over here...wanna entangle me and you on your tail...",
-          	
-	"trigger_serialnumber": "12",
-            	"trigger_type": "cinematic"
+
+          "trigger_serialnumber": "12",
+          "trigger_type": "cinematic"
         }
-      }
+      ]
     },
 
     {
 
-        "serialnumb": "4",
-        "type": "answer",
-
+      "serialnumber": "4",
+      "type": "answer",
       "question": "Hi...what a great loooking fella like yourself is doing in such a deep forest...do you need some help? (She moves to caress your arm as she asks)",
-      "answers": {
+      "class": "com.mygdx.game.Model.Parser.Question",
+      "answers": [
 
-        "1": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "a) I am just passing by to get to the other side of the Forest, nothing special",
 
-          	"trigger_serialnumber": "13",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "13",
+          "trigger_type": "cinematic"
         },
 
-        "2": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "b) Of course...please do, I am trying to reach the other side of the forest, but who is in a rush really?",
           
-	"trigger_serialnumber": "14",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "14",
+          "trigger_type": "cinematic"
         },
 
-        "3": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "c) Oh you bloody creatures all into touching and mouth on mouth gritty business! Ya'll keep it to yourselves would yah!?",
           
-	"trigger_serialnumber": "14",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "14",
+          "trigger_type": "cinematic"
         },
 
-        "4": {
+        {
+          "class": "com.mygdx.game.Model.Parser.Answer",
           "text": "d) (You put your wand in your chest give a suprised look in your face and say: awwwww)(Response to it) she is suprised but she smiles back)",
           
-	"trigger_serialnumber": "15",
-            	"trigger_type": "cinematic"
+          "trigger_serialnumber": "15",
+          "trigger_type": "cinematic"
         }
-      }
+      ]
     },
 
     {
 
-        "serialnumb": "5",
-        "type": "answer",
-
+      "serialnumber": "5",
+      "type": "answer",
       "question": "Naiad: As you reaching to what it seems to you close to the end of your path you find a beautiful woman bathing her feet on the water, sitting making you feel a bit wowed by her majestic looks...You know she will notice you if you keep on moving to your goals so:",
-      "answers": {
+      "class": "com.mygdx.game.Model.Parser.Question",
+      "answers": [
 
-        "1": {
-          "text": "a) Keeps on walking passing by her, and saying \"HOwd'ya?\" till you get to your goal.",
-          
-	"trigger_serialnumber": "6",
-            	"trigger_type": "answer"
-        },
+       {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "a) Keeps on walking passing by her, and saying \"HOwd'ya?\" till you get to your goal.",
 
-        "2": {
-          "text": "b) Make a bow and ask her \"what is the name of the one princess I witness before me\".",
-         
-	"trigger_serialnumber": "18",
-            	"trigger_type": "cinematic"
-        },
+        "trigger_serialnumber": "6",
+        "trigger_type": "answer"
+      },
 
-        "3": {
-          "text": "c) Hey M'am I'm just moving to get to the city I want no trouble. Have a nice day would ya?",
-          
-	"trigger_serialnumber": "18",
-            	"trigger_type": "cinematic"
-        },
+      {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "b) Make a bow and ask her \"what is the name of the one princess I witness before me\".",
 
-        "4": {
-          "text": "d) \"Hello hello, Pardon me my lady, ahm I am deeply sorry but I meant to go in that direction, I see no other way of reaching it but through this path, if you don't mind I will be on my way.\"",
-         
-	"trigger_serialnumber": "19",
-            	"trigger_type": "cinematic"
-        }
+        "trigger_serialnumber": "18",
+        "trigger_type": "cinematic"
+      },
+
+      {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "c) Hey M'am I'm just moving to get to the city I want no trouble. Have a nice day would ya?",
+
+        "trigger_serialnumber": "18",
+        "trigger_type": "cinematic"
+      },
+
+      {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "d) \"Hello hello, Pardon me my lady, ahm I am deeply sorry but I meant to go in that direction, I see no other way of reaching it but through this path, if you don't mind I will be on my way.\"",
+
+        "trigger_serialnumber": "19",
+        "trigger_type": "cinematic"
       }
+    ]
     },
 
     {
 
-        "serialnumb": "6",
-        "type": "answer",
-
+      "serialnumber": "6",
+      "type": "answer",
       "question": "(She stares at your wounds, and she moves towards you quite rapid. What do you do)",
-      "answers": {
+      "class": "com.mygdx.game.Model.Parser.Question",
+      "answers": [
 
-        "1": {
-          "text": "a) Wave my sword at her and say. Hey calm down, I mean no trouble, just moving to get to the city m'am.",
-          
-	"trigger_serialnumber": "20",
-            	"trigger_type": "cinematic"
-        },
+       {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "a) Wave my sword at her and say. Hey calm down, I mean no trouble, just moving to get to the city m'am.",
 
-        "2": {
-          "text": "b) Delighted you move your arm to caress her waist.",
-          	
-	"trigger_serialnumber": "21",
-            	"trigger_type": "cinematic"
-        },
+        "trigger_serialnumber": "20",
+        "trigger_type": "cinematic"
+      },
 
-        "3": {
-          "text": "c) OH is party that you want...that's yo'll get... CHARGGEEEEE!!!!",
-         
-	"trigger_serialnumber": "21",
-            	"trigger_type": "cinematic"
-        },
+      {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "b) Delighted you move your arm to caress her waist.",
 
-        "4": {
-          "text": "d) (Wait for her to do her thing and show her a face of worry while you take 2 steps back to show your uncertainty/discomfort) (She reaches your arm and start on passing some water...to what you know can realize it was a cure....all your wounds are healed you feel all comfort imaginable...even more than prior to the quest...)",
-          
-	"trigger_serialnumber": "22",
-            	"trigger_type": "cinematic"
-        }
+        "trigger_serialnumber": "21",
+        "trigger_type": "cinematic"
+      },
+
+      {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "c) OH is party that you want...that's yo'll get... CHARGGEEEEE!!!!",
+
+        "trigger_serialnumber": "21",
+        "trigger_type": "cinematic"
+      },
+
+      {
+        "class": "com.mygdx.game.Model.Parser.Answer",
+        "text": "d) (Wait for her to do her thing and show her a face of worry while you take 2 steps back to show your uncertainty/discomfort) (She reaches your arm and start on passing some water...to what you know can realize it was a cure....all your wounds are healed you feel all comfort imaginable...even more than prior to the quest...)",
+
+        "trigger_serialnumber": "22",
+        "trigger_type": "cinematic"
       }
+    ]
     }
   ]
 }

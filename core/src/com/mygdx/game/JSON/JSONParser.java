@@ -4,50 +4,49 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
-import com.mygdx.game.Model.Parser.Answer;
+import com.mygdx.game.Model.Parser.Question;
 import com.mygdx.game.Model.Parser.Cinematic;
-import com.mygdx.game.Model.Parser.Response;
 import com.mygdx.game.UI.ButtonFactory;
 
 import java.util.ArrayList;
 
+import static com.badlogic.gdx.net.HttpRequestBuilder.json;
 
 public class JSONParser {
 
-    public  static ArrayList<Cinematic> cinematics = new ArrayList<Cinematic>();
-    public static ArrayList<Answer> answers = new ArrayList<Answer>();
-    JsonReader jsonReader = new JsonReader();
-    JsonValue base = jsonReader.parse(Gdx.files.internal("test.json"));
-    Answer answer;
-    String type = "";
+    public static ArrayList<Cinematic> cinematics = new ArrayList<Cinematic>();
+    public static ArrayList<Question> questions = new ArrayList<Question>();
+    Question question = new Question();
+    Cinematic cinematic = new Cinematic();
 
-    public static ArrayList<Response> AllResponse;
+    JsonReader jsonReader = new JsonReader();
+
+    JsonValue base_cin = jsonReader.parse(Gdx.files.internal(
+            "cinematic.json"));
+    JsonValue base_ans = jsonReader.parse(Gdx.files.internal(
+            "answers.json"));
 
     ButtonFactory buttonFactory;
 
-
     public JSONParser() {
-        Answer answer = new Answer();
-        Cinematic cinematic = new Cinematic();
         Json json = new Json();
+        loadCinematics();
+        loadAnswers();
+    }
 
-        for(JsonValue key : base.get("response")) {
-
-            String type = (key.getString("type"));
-            switch (type){
-                case "answers":
-                    answer = json.fromJson(Answer.class, key.toString());
-
-                    break;
-                case "cinematic":
-                    cinematic = json.fromJson(Cinematic.class,
-                        key.toString());
-                    cinematics.add(cinematic);
-                    break;
-            }
-
+    public void loadCinematics(){
+        for(JsonValue key : base_cin.get("response")) {
+            cinematic = json.fromJson(Cinematic.class, key.toString());
+            cinematics.add(cinematic);
         }
     }
 
+    public void loadAnswers(){
+        for(JsonValue key : base_ans.get("response")) {
+            question = json.fromJson(Question.class, key.toString());
+            questions.add(question);
+        }
+
+    }
 }
 

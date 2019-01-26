@@ -1,14 +1,10 @@
 package com.mygdx.game.UI;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
-import com.mygdx.game.Model.Parser.Answer;
+import com.mygdx.game.Model.Parser.Question;
 import com.mygdx.game.Model.Parser.Key;
 
 import java.util.ArrayList;
@@ -21,7 +17,7 @@ public class UI_Render  {
     TextButton.TextButtonStyle textButtonStyle;
     BitmapFont font;
     Skin skin;
-    HashMap<Key, Answer> answerAl;
+    HashMap<Key, Question> answerAl;
     ButtonFactory buttonFactory;
     ArrayList<TextButton> textButtonAl;
 
