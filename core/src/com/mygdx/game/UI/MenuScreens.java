@@ -16,6 +16,8 @@ public class MenuScreens implements Screen {
 
     private Game2D parent;
     private Stage stage;
+    private String gameName="Fuadaithe";
+
     Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
 
     public MenuScreens(Game2D game) {
@@ -31,7 +33,7 @@ public class MenuScreens implements Screen {
     }
 
     public void showMain(){
-
+        Gdx.graphics.setTitle(gameName);
         Gdx.graphics.setResizable(false);
         stage.clear();
         Table table = new Table();
@@ -40,7 +42,7 @@ public class MenuScreens implements Screen {
         stage.addActor(table);
 
         //create Labels
-        Label titleGameLabel = new Label("Fuadaithe",skin);
+        Label titleGameLabel = new Label(gameName,skin);
 
         //create buttons
         TextButton newGame = new TextButton("New Game", skin);
