@@ -94,7 +94,8 @@ public class MenuScreens implements Screen {
         TextButton btnBack = new TextButton("Back to Menu",skin);
 
         //Create Slider
-        final Slider audioSlider = new Slider(0, 1, 0.05f, false, skin);
+        Slider audioSlider = new Slider(0, 1, 0.05f, false, skin);
+        audioSlider.setValue(parent.gameSoundVolume);
 
         //Create Labels
         Label audioLabel = new Label("Sound Volume:",skin);
@@ -118,7 +119,7 @@ public class MenuScreens implements Screen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 //pbrShader.albedoColor.x=audioSlider.getValue();
-                System.out.println(audioSlider.getValue()); //Get Audio Volume from Slider
+                parent.gameSoundVolume=audioSlider.getValue();
             }
         });
     }
