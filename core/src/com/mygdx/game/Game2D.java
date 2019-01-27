@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.mygdx.game.JSON.JSONParser;
 import com.mygdx.game.UI.AnswersScreens;
@@ -18,6 +19,7 @@ public class Game2D extends Game {
 	public final static int ANSWER_SCREEN = 3;
 	public final static int END_SCREEN = 4;
 	public float gameSoundVolume=0.5f;
+	public Sound menuSound;
 	public Preferences prefs;
 	public final static String gameName = "Easnamh";
 	public static Skin skin;
@@ -84,6 +86,7 @@ public class Game2D extends Game {
 				this.setScreen(answerScreen);
 				break;
 			case END_SCREEN:
+				menuSound.setVolume(0,0);
 				mainScreen = new MenuScreens(this,true);
 				this.setScreen(mainScreen);
 				break;

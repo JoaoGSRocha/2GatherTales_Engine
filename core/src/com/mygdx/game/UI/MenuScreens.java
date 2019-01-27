@@ -22,7 +22,6 @@ public class MenuScreens implements Screen {
     private Stage stage;
     private boolean exitFadeOut=false;
     private boolean openCredits=false;
-    public Sound sound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
     Skin skin;
 
     public MenuScreens(Game2D game) {
@@ -32,9 +31,10 @@ public class MenuScreens implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        sound.play();
-        sound.setLooping(0,true);
-        sound.setVolume(0, parent.gameSoundVolume);
+        parent.menuSound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
+        parent.menuSound.play(parent.gameSoundVolume);
+        parent.menuSound.setLooping(0,true);
+        parent.menuSound.setVolume(0,parent.gameSoundVolume);
     }
 
     public MenuScreens(Game2D game, boolean openCredits) {
@@ -46,9 +46,8 @@ public class MenuScreens implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        sound.play();
-        sound.setLooping(0,true);
-        sound.setVolume(0, parent.gameSoundVolume);
+        parent.menuSound.setLooping(0,true);
+        parent.menuSound.setVolume(0,parent.gameSoundVolume);
     }
 
     @Override
@@ -191,7 +190,7 @@ public class MenuScreens implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 //pbrShader.albedoColor.x-=audioSlider.getValue();
                 parent.gameSoundVolume=audioSlider.getValue();
-                sound.setVolume(0, audioSlider.getValue());
+                parent.menuSound.setVolume(0, audioSlider.getValue());
                 parent.prefs.putFloat("gameSoundVolume",audioSlider.getValue());
                 parent.prefs.flush();
             }
@@ -205,7 +204,7 @@ public class MenuScreens implements Screen {
 
         if(exitFadeOut){
             parent.gameSoundVolume-=0.01f;
-            sound.setVolume(0,parent.gameSoundVolume);
+            parent.menuSound.setVolume(0,parent.gameSoundVolume);
             if(parent.gameSoundVolume<0){
                 Gdx.app.exit();
             }
