@@ -82,6 +82,13 @@ public class CinematicScreens implements Screen {
             }
         });
         stage.addActor(label);
+
+        if(!cinematic.getMusic().equals("")){
+            parent.menuSound.stop();
+            parent.menuSound = Gdx.audio.newSound(Gdx.files.internal("music/"+cinematic.getMusic()));
+            parent.menuSound.loop();
+            parent.menuSound.play(parent.gameSoundVolume);
+        }
     }
 
     public void loadImgs(){

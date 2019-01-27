@@ -31,7 +31,13 @@ public class MenuScreens implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        parent.menuSound.setLooping(0,true);
+        if(parent.menuSound!=null){
+            parent.menuSound.stop();
+        }
+        parent.menuSound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
+        parent.menuSound.play(parent.gameSoundVolume);
+
+        parent.menuSound.loop();
         parent.menuSound.setVolume(0,parent.gameSoundVolume);
     }
 
@@ -44,7 +50,13 @@ public class MenuScreens implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        parent.menuSound.setLooping(0,true);
+        if(parent.menuSound!=null){
+            parent.menuSound.stop();
+        }
+        parent.menuSound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
+        parent.menuSound.play(parent.gameSoundVolume);
+
+        parent.menuSound.loop();
         parent.menuSound.setVolume(0,parent.gameSoundVolume);
     }
 

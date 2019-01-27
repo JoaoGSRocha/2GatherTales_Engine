@@ -5,7 +5,7 @@
             "type" : "cinematic",
             "charac" : "imgs/NOBODY.png",
             "text" : "TL;DL: You were in a middle of a fight to defend your city and as you were getting surrounded \n You were thrown a rope to rise a tree and to demolish the zombies on the ground, you threw a bomb...but the branch broke...you fell...your counciousness slowly starts to drift away.",
-
+            "music": "",
             "trigger_serialnumber": "2",
             "trigger_type": "cinematic"
         }, {
@@ -13,7 +13,7 @@
             "type" : "cinematic",
             "backg" : "imgs/map.jpg",
             "charac" : "imgs/NOBODY.png",
-
+            "music": "",
             "text" : "As you wake up, you find yourself with an old paper covering your face, which when you hold it, you recognize it is in fact a map...\n You find it odd...these islands you see, they are pieces of land you recognize from the Kingdom you live on, but they seem to be floating, you wonder why...and one of these, have a building you recognize very well...as it is the place you call home.",
 
             "trigger_serialnumber": "3",
@@ -24,7 +24,7 @@
             "type" : "cinematic",
             "backg" : "imgs/cavern1.jpg",
             "charac" : "imgs/NOBODY.png",
-
+            "music": "Tema 1 - fairy.mp3",
             "text" : "(In your surroundings you see nothing but rocks and the dirt below you. You hear the echoing of water doplets troughout the cavernous systems of this place and you feel a faint soft breeze of wind. The amazement you feel, when you face this feminine form, enchanging glances with you, curious and with a very dense enthral.) Hi cutie, you lost? you sure seem to be in need of a helping hand.. Would you mind keeping me company?",
             "trigger_serialnumber": "1",
             "trigger_type": "answer"
@@ -32,6 +32,7 @@
         {
             "serialnumber": "4",
             "type" : "cinematic",
+            "music": "",
             "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
             "trigger_serialnumber": "1",
             "trigger_type": "answer"
@@ -41,7 +42,7 @@
             "type" : "cinematic",
             "backg" : "imgs/NOBODY.png",
             "charac" : "imgs/lose2_leanan_wins.png",
-            
+            "music": "",
             "text" : "As your heart paces for this creature full of lust and desire, you get yourself contaminated in this deep lure and admiration towards her....and not that you care...but surrounding several demonic ghostly creatures appear besides you...it seems she was hunting all the adventures that she saw passing through here and from their admiration and charmed to be her slaves they all died prematurely and now serve her as her haunted demon souls...",
             "trigger_serialnumber": "28",
             "trigger_type": "END"
@@ -51,7 +52,7 @@
             "type" : "cinematic",
             "backg" : "imgs/cavern1.jpg",
             "charac" : "imgs/Leanan_Sid.png",
-            
+            "music": "",
             "text" : "Oh please, I can't take this lonesome for this long, please let me aid you, I will be your guide in these forest...anything but this misery I feel.(She follows you and aids you and you realize she is a level 15 wizard while yourself only but a lvl 3 fighter, realize having her on your side is quite the boost and think to yourself your Game Master clearly did not realize you could outsmart him in a duel of diplomatic whims)",
             "trigger_serialnumber": "9",
             "trigger_type": "cinematic"
@@ -61,7 +62,7 @@
             "type" : "cinematic",
             "backg" : "imgs/cavern1.jpg",
             "charac" : "imgs/Leanan_Sid.png",
-
+            "music": "",
             "text" : "Ok you seem to not be...in the right vibe, as much as I would have liked you to be...too bad....we could have had some fun....",
             "trigger_serialnumber": "8",
             "trigger_type": "cinematic"
@@ -71,6 +72,7 @@
             "type" : "cinematic",
             "backg" : "imgs/NOBODY.png",
             "charac" : "imgs/lose2_leanan_wins.png",
+            "music": "",
             "text" : "As your heart paces for this creature full of lust and desire, you get yourself contaminated in this deep lure and admiration towards her....and not that you care...but surrounding several demonic ghostly creatures appear besides you...it seems she was hunting all the adventures that she saw passing through here and from their admiration and charmed to be her slaves they all died prematurely and now serve her as her haunted demon souls...",
             "trigger_serialnumber": "28",
             "trigger_type": "END"
@@ -80,7 +82,7 @@
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
             "charac" : "imgs/NOBODY.png",
-
+            "music": "tema 2 - Fox.mp3",
             "text" : "(Between the trees you see this really beautiful woman with her long gown, smiling you at you from afar, perplexed by her beauty you decide...)",
             "trigger_serialnumber": "3",
             "trigger_type": "answer"
@@ -90,6 +92,7 @@
             "serialnumber": "10",
             "type" : "cinematic",
             "charac" : "imgs/NOBODY.png",
+            "music": "",
             "text" : "",
             "trigger_serialnumber": "3",
             "trigger_type": "answer"
@@ -99,7 +102,7 @@
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
             "charac" : "imgs/Skogsgra_WIP.png",
-
+            "music": "",
             "text" : "(You see her unintered look as she is moving away and says...) Good luck finding your way out....(She moves in such way it makes it impossible to track her between the dense trees)",
             "trigger_serialnumber": "16",
             "trigger_type": "cinematic"
@@ -109,7 +112,7 @@
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
             "charac" : "imgs/Skogsgra_WIP.png",
-
+            "music": "",
             "text" : "You can sense the tension on the air....no not metaphorical, quite literal...and you know clearly see...a storm...no..OH LORD, A TORNADO is coming! These Skogra is no strange to magic and she is furious...no MAD, Ruuuuuuuuuuuuuuuuun!",
             "trigger_serialnumber": "16",
             "trigger_type": "cinematic"
@@ -119,7 +122,7 @@
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
             "charac" : "imgs/Skogsgra_WIP.png",
-
+            "music": "",
             "text" : "She seems quite found of you, and praising your  respect and you feel the same about her. You provide each other with the respect that seem gone from all livings your ever talked and faced, you can see she feels really confortable having you around and she guides you to the end of the forest and invites you for a return.",
             "trigger_serialnumber": "16",
             "trigger_type": "cinematic"
@@ -129,6 +132,7 @@
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
             "charac" : "imgs/Skogsgra_WIP.png",
+            "music": "",
             "text" : "Good good good good, I'm bored! Good luck finding your path...(She says as she moves away, making it impossible to track her between the dense trees)",
             "trigger_serialnumber": "16",
             "trigger_type": "cinematic"
@@ -138,7 +142,7 @@
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
             "charac" : "imgs/Skogsgra_WIP.png",
-
+            "music": "",
             "text" : "You can sense the tension on the air....no not metaphorical, quite literal...and you know clearly see...a storm...no..OH LORD, A TORNADO is coming! These Skogra is no strange to magic and she is furious...no MAD, Ruuuuuuuuuuuuuuuuun!",
             "trigger_serialnumber": "16",
             "trigger_type": "cinematic"
@@ -148,7 +152,7 @@
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
             "charac" : "imgs/NOBODY.png",
-
+            "music": "tema 3 - Naide.mp3",
             "text" : "As you reaching to what it seems to you close to the end of your path you find a beautiful woman bathing her feet on the water, sitting making you feel a bit wowed by her majestic looks.",
             "trigger_serialnumber": "5",
             "trigger_type": "answer"
@@ -156,7 +160,7 @@
         {
             "serialnumber": "17",
             "type" : "cinematic",
-
+            "music": "",
             "charac" : "imgs/NOBODY.png",
             "text" : "",
             "trigger_serialnumber": "5",
@@ -167,7 +171,7 @@
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
             "charac" : "imgs/Naiad_WIP.png",
-
+            "music": "",
             "text" : "...yes...pass....(she seems quite displeased)",
             "trigger_serialnumber": "23",
             "trigger_type": "cinematic"
@@ -177,7 +181,7 @@
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
             "charac" : "imgs/Naiad_WIP.png",
-
+            "music": "",
             "text" : "You managed to cross the path and after facing all the 3...you seem to gather the attention of none....and as you are acknowling your lack of interest....the bridge to the last island...your home....falls...",
             "trigger_serialnumber": "20",
             "trigger_type": "cinematic"
@@ -187,7 +191,7 @@
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
             "charac" : "imgs/Naiad_WIP.png",
-
+            "music": "",
             "text" : "(She reaches your arm and start on passing some water...to what you know can realize it was a cure....all your wounds are healed you feel all comfort imaginable...even more than prior to the quest...) Would you like me to show you the way? (She puts her arma around yours and you have a lovely talk...she seems to not let you go, but you promisse to return soon.",
             "trigger_serialnumber": "24",
             "trigger_type": "cinematic"
@@ -197,7 +201,7 @@
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
             "charac" : "imgs/Naiad_WIP.png",
-
+            "music": "",
             "text" : "...yes...pass....(she seems quite displeased)",
             "trigger_serialnumber": "22",
             "trigger_type": "cinematic"
@@ -207,7 +211,7 @@
             "type" : "cinematic",
             "backg" : "lose1_character.png",
             "charac" : "imgs/lose1_curtain.png",
-
+            "music": "",
             "text" : "You managed to cross the path and after facing all the 3...you seem to gather the attention of none....and as you are acknowling your lack of interest....the bridge to the last island...your home....falls...",
             "trigger_serialnumber": "23",
             "trigger_type": "cinematic"
@@ -215,7 +219,7 @@
         {
             "serialnumber": "23",
             "type" : "cinematic",
-
+            "music": "",
             "charac" : "imgs/NOBODY.png",
             "text" : "",
             "trigger_serialnumber": "24",
@@ -226,6 +230,7 @@
             "type" : "cinematic",
             "backg" : "imgs/final1.jpg",
             "charac" : "imgs/Win1.png",
+            "music": "",
             "text" : "Your bruises are now but history, you are revitalized. When you faced the healer a new story began. Now this invincible duo will dissimate whatever vile creatures remain at the adventure's hometown",  
            "trigger_serialnumber": "28",
             "trigger_type": "END"
@@ -235,6 +240,7 @@
             "type" : "cinematic",
             "backg" : "imgs/final1.jpg",
             "charac" : "imgs/Win3.png",
+            "music": "",
             "text" : "Running and chatting you and the foxy creature arrive at the last island...you continue the path happily conversating and conitinuing a very peaceulf path to home...to happyness",
            "trigger_serialnumber": "28",
             "trigger_type": "END"
@@ -244,7 +250,7 @@
             "type" : "cinematic",
             "backg" : "imgs/final1.jpg",
             "charac" : "imgs/Win2.png",
-
+            "music": "",
 
             "text" : "When you reach to the last island you can feel the fresh breeze, you are now relieved. You know that you will be reaching home soon...and now...a very pleasing winged lady friend is gonna ensure, you do so, side by side with her. To aid you to the end of tales. ",
            "trigger_serialnumber": "28",
@@ -253,7 +259,7 @@
         {
             "serialnumber": "28",
             "type" : "cinematic",
-
+            "music": "",
             "charac" : "imgs/NOBODY.png",
             "text" : "",
             "trigger_serialnumber": "28",

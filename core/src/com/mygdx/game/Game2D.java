@@ -34,9 +34,6 @@ public class Game2D extends Game {
 		Gdx.graphics.setResizable(false);
 		Gdx.graphics.setWindowedMode(1000,563);
 
-		menuSound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
-		menuSound.play(gameSoundVolume);
-
 		JSONParser jsonParser = new JSONParser();
 		
 		if(!prefs.contains("gameSoundVolume")) {
