@@ -84,6 +84,7 @@ public class Game2D extends Game {
 			case ANSWER_SCREEN:
 				answerScreen = new AnswersScreens(this, JSONParser.questions, key-1);
 				this.setScreen(answerScreen);
+				break;
 			case END_SCREEN:
 				menuSound.setVolume(0,0);
 				mainScreen = new MenuScreens(this,true);
