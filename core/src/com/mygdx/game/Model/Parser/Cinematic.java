@@ -15,7 +15,7 @@ public class Cinematic   {
     public void setMusic(String music) {
         this.music = music;
     }
-    
+
     private Integer trigger_serialnumber;
     private String trigger_type;
     private String backg;

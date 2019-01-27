@@ -31,8 +31,6 @@ public class MenuScreens implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        parent.menuSound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
-        parent.menuSound.play(parent.gameSoundVolume);
         parent.menuSound.setLooping(0,true);
         parent.menuSound.setVolume(0,parent.gameSoundVolume);
     }

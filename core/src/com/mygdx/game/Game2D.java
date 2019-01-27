@@ -34,6 +34,9 @@ public class Game2D extends Game {
 		Gdx.graphics.setResizable(false);
 		Gdx.graphics.setWindowedMode(1000,563);
 
+		menuSound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
+		menuSound.play(gameSoundVolume);
+
 		JSONParser jsonParser = new JSONParser();
 		
 		if(!prefs.contains("gameSoundVolume")) {
@@ -70,6 +73,7 @@ public class Game2D extends Game {
 	public void changeScreen(int screen, int key){
 		switch(screen){
 			case MAIN_MENU:
+				menuSound.setVolume(0,0);
 				mainScreen = new MenuScreens(this);
 				this.setScreen(mainScreen);
 				break;
