@@ -17,11 +17,11 @@ public class ButtonFactory {
 
     UI_Logic ui_logic = new UI_Logic();
 
-    public ArrayList<TextButton> createAnswerButton_Al(Game2D parent, ArrayList<Question> questionsAl, int questionKey){
+    public ArrayList<TextButton> createAnswerButton_Al(final Game2D parent, ArrayList<Question> questionsAl, int questionKey){
         ArrayList<TextButton> textButtonsAl = new ArrayList<TextButton>();
         int key = questionKey -1;
         int count = 0;
-        for(Answer answer : questionsAl.get(questionKey).getAnswers()){
+        for(final Answer answer : questionsAl.get(questionKey).getAnswers()){
             TextButton button = ui_logic.createButton(answer.getText(),new float[]{START_X_VAL, START_Y_VAL + INC_Y_VAL * count},new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {

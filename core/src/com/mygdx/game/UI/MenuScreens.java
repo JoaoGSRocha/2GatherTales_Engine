@@ -48,7 +48,7 @@ public class MenuScreens implements Screen {
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(false);
-        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("placeholder.png"))));
+        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("imgs/home/homescreen_title.jpg"))));
         stage.addActor(table);
 
         //create Labels
@@ -61,7 +61,7 @@ public class MenuScreens implements Screen {
         TextButton exit = new TextButton("Exit", skin);
 
         //add buttons to table
-        table.add(titleGameLabel).fillX().uniformX();
+
         table.row().spaceTop(20);
         table.add(newGame).fillX().uniformX();
         table.row();
@@ -111,10 +111,10 @@ public class MenuScreens implements Screen {
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(false);
-        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("placeholder.png"))));
+        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("imgs/map.jpg"))));
         stage.addActor(table);
 
-        Image mazePreview = new Image(new TextureRegionDrawable(new TextureRegion(new Texture("credits.png"))));
+        Image mazePreview = new Image(new TextureRegionDrawable(new TextureRegion(new Texture("credits_2.png"))));
         mazePreview.setScaling(Scaling.fit); // Default is Scaling.stretch, as you found.
         table.add(mazePreview).expand().fill();
 

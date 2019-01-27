@@ -9,10 +9,18 @@ public class Cinematic   {
 
     private Integer trigger_serialnumber;
     private String trigger_type;
+    private String backg;
+    private String charac;
 
+    public String getBackg() { return backg; }
+
+    public void setBackg(String backg) { this.backg = backg; }
+
+    public String getCharac() { return charac; }
+
+    public void setCharac(String charac) { this.charac = charac; }
 
     public Integer getSerialnumber() { return serialnumber; }
-
 
     public void setSerialnumber(Integer serialnumber) {
         this.serialnumber = serialnumber;

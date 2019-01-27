@@ -6,7 +6,16 @@ public class Question {
     private  Integer serialnumber;
     private String type;
     private String question;
+    private String backg;
+    private String charac;
 
+    public String getBackg() { return backg; }
+
+    public void setBackg(String backg) { this.backg = backg; }
+
+    public String getCharac() { return charac; }
+
+    public void setCharac(String charac) { this.charac = charac; }
 
     ArrayList<Answer> answers = new ArrayList<Answer>();
 
