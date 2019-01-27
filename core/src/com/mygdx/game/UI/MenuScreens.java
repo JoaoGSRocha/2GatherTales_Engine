@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.audio.*;
 import com.mygdx.game.Game2D;
@@ -90,6 +91,43 @@ public class MenuScreens implements Screen {
             public void changed(ChangeEvent event, Actor actor) {
                 //pbrShader.albedoColor.x=audioSlider.getValue();
                 showSettings();
+            }
+        });
+
+        credits.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                //pbrShader.albedoColor.x=audioSlider.getValue();
+                showCredits();
+            }
+        });
+    }
+
+    public void showCredits()
+    {
+        stage.clear();
+        // Create a table that fills the screen. Everything else will go inside this table.
+        Table table = new Table();
+        table.setFillParent(true);
+        table.setDebug(false);
+        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("placeholder.png"))));
+        stage.addActor(table);
+
+        Image mazePreview = new Image(new TextureRegionDrawable(new TextureRegion(new Texture("credits.png"))));
+        mazePreview.setScaling(Scaling.fit); // Default is Scaling.stretch, as you found.
+        table.add(mazePreview).expand().fill();
+
+        //Create Buttons
+        TextButton btnBack = new TextButton("Back to Menu",skin);
+
+        table.row().pad(10, 0, 10, 0);
+        table.add(btnBack).fillX().uniformX();
+
+        // create listeners
+        btnBack.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                showMain();
             }
         });
     }
