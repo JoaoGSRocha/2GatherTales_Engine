@@ -72,7 +72,7 @@ public class AnswersScreens implements Screen {
         label.setWrap(true);
         label.setWidth(300);
         label.setX(20);
-        label.setY(240-label.getHeight());
+        label.setY(200-label.getHeight());
         stage.addActor(label);
 
     }

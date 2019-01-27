@@ -13,7 +13,6 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.Cinematic;
 
@@ -25,7 +24,6 @@ public class CinematicScreens implements Screen {
 
     private Game2D parent;
     private Stage stage;
-    private Actor dialogRect;
     private TextButton homeButton;
     private Cinematic cinematic;
     private ArrayList<Cinematic> cinematicAl = new ArrayList<Cinematic>();
@@ -50,9 +48,12 @@ public class CinematicScreens implements Screen {
     public void show() {
         loadImgs();
         label.setWrap(true);
+        label.setColor(0f,0f,0f,1);
 
-        dialogRect = new DialogRect();
-        stage.addActor(dialogRect);
+        Image cinematicBg = new Image(new TextureRegionDrawable(
+                new TextureRegion(new Texture("box1.png"))));
+        cinematicBg.setSize(1000,100);
+        stage.addActor(cinematicBg);
 
         homeButton = new ButtonFactory().createBacktoMainButton(parent);
         stage.addActor(homeButton);
