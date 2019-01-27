@@ -51,7 +51,7 @@ public class CinematicScreens implements Screen {
         label.setColor(0f,0f,0f,1);
 
         Image cinematicBg = new Image(new TextureRegionDrawable(
-                new TextureRegion(new Texture("box1.png"))));
+                new TextureRegion(new Texture("box2.png"))));
         cinematicBg.setSize(1000,100);
         stage.addActor(cinematicBg);
 
