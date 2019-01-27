@@ -140,7 +140,7 @@ public class MenuScreens implements Screen {
         Table table = new Table();
         table.setFillParent(true);
         table.setDebug(false);
-        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("placeholder.png"))));
+        table.setBackground(new TextureRegionDrawable(new TextureRegion(new Texture("imgs/map.jpg"))));
         stage.addActor(table);
 
         //Create Buttons
