@@ -3,11 +3,15 @@ package com.mygdx.game.UI;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
@@ -70,6 +74,22 @@ public class CinematicScreens implements Screen {
             }
         });
         stage.addActor(label);
+    }
+
+    public void loadImgs(){
+        Table table = new Table();
+        Table table2 = new Table();
+        table.setFillParent(true);
+        table2.setFillParent(true);
+        Image backg = new Image(new TextureRegionDrawable(
+                new TextureRegion(new Texture(this.questionsA1.get(key).getBackg()))));
+        Image charac = new Image(new TextureRegionDrawable(
+                new TextureRegion(new Texture(this.questionsA1.get(key).getCharac()))));
+        charac.setScaling(Scaling.fit); // Default is Scaling.stretch, as you found.
+        stage.addActor(table);
+        stage.addActor(table2);
+        table.add(backg).expand().fill();
+        table2.add(charac).expand().fill();
     }
 
 

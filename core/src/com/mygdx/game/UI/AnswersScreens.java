@@ -50,6 +50,7 @@ public class AnswersScreens implements Screen {
 
     @Override
     public void show() {
+        loadImgs();
         for(TextButton button: buttonsAl){
             button.getLabelCell().width(200);
             button.getLabel().setWrap(true);
@@ -60,11 +61,7 @@ public class AnswersScreens implements Screen {
         }
     }
 
-
-    @Override
-    public void render(float delta) {
-        gl.glClearColor(0f, 0f, 0f, 1);
-        gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+    public void loadImgs(){
         Table table = new Table();
         Table table2 = new Table();
         table.setFillParent(true);
@@ -78,6 +75,14 @@ public class AnswersScreens implements Screen {
         stage.addActor(table2);
         table.add(backg).expand().fill();
         table2.add(charac).expand().fill();
+    }
+
+
+
+    @Override
+    public void render(float delta) {
+        gl.glClearColor(0f, 0f, 0f, 1);
+        gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
         stage.draw();
     }

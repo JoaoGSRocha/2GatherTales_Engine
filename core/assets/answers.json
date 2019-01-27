@@ -98,7 +98,7 @@
       "serialnumber": "3",
       "type": "answer",
       "backg" : "imgs/floresta1.jpg",
-      "charac" : "Skogsgra_WIP.png",
+      "charac" : "imgs/Skogsgra_WIP.png",
 
       "question": "(Between the trees you see once again the really beautiful woman with her long gown, smiling you at you from afar, perplexed by her beauty you decide...)",
       "class": "com.mygdx.game.Model.Parser.Question",
@@ -143,7 +143,7 @@
       "serialnumber": "4",
       "type": "answer",
       "backg" : "imgs/floresta1.jpg",
-      "charac" : "Skogsgra_WIP.png",
+      "charac" : "imgs/Skogsgra_WIP.png",
 
       "question": "(Seeing you continuing your path, she decides to greet youJ) Hi...what are just curious fella like yourself doing in such a deep forest...do you need some help? (She moves to grab your clothes with what seems to you some dense curiosity.)",
       "class": "com.mygdx.game.Model.Parser.Question",
@@ -188,7 +188,7 @@
       "serialnumber": "5",
       "type": "answer",
       "backg" : "imgs/lago1.jpg",
-      "charac" : "Naiad_WIP.png",
+      "charac" : "imgs/Naiad_WIP.png",
 
       "question": "Naiad: As you reaching to what it seems to you the near end of your path,  you find a beautiful woman bathing her feet on the water, sitting making you feel a bit wowed by her majestic looks...You know she will notice you if you keep on moving to your goals so:",
       "class": "com.mygdx.game.Model.Parser.Question",
@@ -233,7 +233,7 @@
       "serialnumber": "6",
       "type": "answer",
       "backg" : "imgs/lago1.jpg",
-      "charac" : "Naiad_WIP.png",
+      "charac" : "imgs/Naiad_WIP.png",
 
       "question": "(She stares at your wounds, and she moves towards you quite rapid. What do you do)",
       "class": "com.mygdx.game.Model.Parser.Question",

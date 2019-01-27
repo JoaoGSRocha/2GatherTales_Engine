@@ -58,7 +58,7 @@
             "serialnumber": "7",
             "type" : "cinematic",
             "backg" : "imgs/cavern1.jpg",
-            "charac" : "Leanan_Sid.png",
+            "charac" : "imgs/Leanan_Sid.png",
 
             "text" : "Ok you seem to not be...in the right vibe, as much as I would have liked you to be...too bad....we could have had some fun....",
             "trigger_serialnumber": "8",
@@ -68,7 +68,7 @@
             "serialnumber": "8",
             "type" : "cinematic",
             "backg" : "imgs/cavern1.jpg",
-            "charac" : "lose2_leanan_wins.png",
+            "charac" : "imgs/lose2_leanan_wins.png",
             "text" : "As your heart paces for this creature full of lust and desire, you get yourself contaminated in this deep lure and admiration towards her....and not that you care...but surrounding several demonic ghostly creatures appear besides you...it seems she was hunting all the adventures that she saw passing through here and from their admiration and charmed to be her slaves they all died prematurely and now serve her as her haunted demon souls...",
             "trigger_serialnumber": "28",
             "trigger_type": "cinematic"
@@ -94,7 +94,7 @@
             "serialnumber": "11",
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
-            "charac" : "Skogsgra_WIP.png",
+            "charac" : "imgs/Skogsgra_WIP.png",
 
             "text" : "(You see her unintered look as she is moving away and says...) Good luck finding your way out....(She moves in such way it makes it impossible to track her between the dense trees)",
             "trigger_serialnumber": "16",
@@ -104,7 +104,7 @@
             "serialnumber": "12",
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
-            "charac" : "Skogsgra_WIP.png",
+            "charac" : "imgs/Skogsgra_WIP.png",
 
             "text" : "You can sense the tension on the air....no not metaphorical, quite literal...and you know clearly see...a storm...no..OH LORD, A TORNADO is coming! These Skogra is no strange to magic and she is furious...no MAD, Ruuuuuuuuuuuuuuuuun!",
             "trigger_serialnumber": "16",
@@ -114,7 +114,7 @@
             "serialnumber": "13",
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
-            "charac" : "Skogsgra_WIP.png",
+            "charac" : "imgs/Skogsgra_WIP.png",
 
             "text" : "She seems quite found of you, and praising your  respect and you feel the same about her. You provide each other with the respect that seem gone from all livings your ever talked and faced, you can see she feels really confortable having you around and she guides you to the end of the forest and invites you for a return.",
             "trigger_serialnumber": "16",
@@ -124,7 +124,7 @@
             "serialnumber": "14",
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
-            "charac" : "Skogsgra_WIP.png",
+            "charac" : "imgs/Skogsgra_WIP.png",
             "text" : "Good good good good, I'm bored! Good luck finding your path...(She says as she moves away, making it impossible to track her between the dense trees)",
             "trigger_serialnumber": "16",
             "trigger_type": "cinematic"
@@ -133,7 +133,7 @@
             "serialnumber": "15",
             "type" : "cinematic",
             "backg" : "imgs/floresta1.jpg",
-            "charac" : "Skogsgra_WIP.png",
+            "charac" : "imgs/Skogsgra_WIP.png",
 
             "text" : "You can sense the tension on the air....no not metaphorical, quite literal...and you know clearly see...a storm...no..OH LORD, A TORNADO is coming! These Skogra is no strange to magic and she is furious...no MAD, Ruuuuuuuuuuuuuuuuun!",
             "trigger_serialnumber": "16",
@@ -143,7 +143,7 @@
             "serialnumber": "16",
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
-            "charac" : "Naiad_WIP.png",
+            "charac" : "imgs/Naiad_WIP.png",
 
             "text" : "As you reaching to what it seems to you close to the end of your path you find a beautiful woman bathing her feet on the water, sitting making you feel a bit wowed by her majestic looks.",
             "trigger_serialnumber": "5",
@@ -161,7 +161,7 @@
             "serialnumber": "18",
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
-            "charac" : "Naiad_WIP.png",
+            "charac" : "imgs/Naiad_WIP.png",
 
             "text" : "...yes...pass....(she seems quite displeased)",
             "trigger_serialnumber": "23",
@@ -171,7 +171,7 @@
             "serialnumber": "19",
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
-            "charac" : "Naiad_WIP.png",
+            "charac" : "imgs/Naiad_WIP.png",
 
             "text" : "You managed to cross the path and after facing all the 3...you seem to gather the attention of none....and as you are acknowling your lack of interest....the bridge to the last island...your home....falls...",
             "trigger_serialnumber": "20",
@@ -181,7 +181,7 @@
             "serialnumber": "20",
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
-            "charac" : "Naiad_WIP.png",
+            "charac" : "imgs/Naiad_WIP.png",
 
             "text" : "(She reaches your arm and start on passing some water...to what you know can realize it was a cure....all your wounds are healed you feel all comfort imaginable...even more than prior to the quest...) Would you like me to show you the way? (She puts her arma around yours and you have a lovely talk...she seems to not let you go, but you promisse to return soon.",
             "trigger_serialnumber": "24",
@@ -191,7 +191,7 @@
             "serialnumber": "21",
             "type" : "cinematic",
             "backg" : "imgs/lago1.jpg",
-            "charac" : "Naiad_WIP.png",
+            "charac" : "imgs/Naiad_WIP.png",
 
             "text" : "...yes...pass....(she seems quite displeased)",
             "trigger_serialnumber": "22",
@@ -201,7 +201,7 @@
             "serialnumber": "22",
             "type" : "cinematic",
             "backg" : "lose1_character.png",
-            "charac" : "lose1_curtain.png",
+            "charac" : "imgs/lose1_curtain.png",
 
             "text" : "You managed to cross the path and after facing all the 3...you seem to gather the attention of none....and as you are acknowling your lack of interest....the bridge to the last island...your home....falls...",
             "trigger_serialnumber": "23",
