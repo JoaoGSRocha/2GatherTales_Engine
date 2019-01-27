@@ -74,6 +74,9 @@ public class CinematicScreens implements Screen {
                     case "answer":
                         parent.changeScreen(parent.ANSWER_SCREEN,cinematic.getTrigger_serialnumber());
                         break;
+                    case "END":
+                        parent.changeScreen(parent.END_SCREEN,0);
+                        break;
                 }
             }
         });

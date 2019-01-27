@@ -32,6 +32,9 @@ public class ButtonFactory {
                         case "answer":
                             parent.changeScreen(parent.ANSWER_SCREEN,answer.getTrigger_serialnumber());
                             break;
+                        case "END":
+                            parent.changeScreen(parent.END_SCREEN,0);
+                            break;
                     }
 
                 }

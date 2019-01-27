@@ -21,6 +21,7 @@ public class MenuScreens implements Screen {
     private Game2D parent;
     private Stage stage;
     private boolean exitFadeOut=false;
+    private boolean openCredits=false;
     public Sound sound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
     Skin skin;
 
@@ -34,12 +35,29 @@ public class MenuScreens implements Screen {
         sound.play();
         sound.setLooping(0,true);
         sound.setVolume(0, parent.gameSoundVolume);
+    }
 
+    public MenuScreens(Game2D game, boolean openCredits) {
+        parent = game;
+        skin = parent.skin;
+
+        this.openCredits = openCredits;
+
+        stage = new Stage(new ScreenViewport());
+        Gdx.input.setInputProcessor(stage);
+
+        sound.play();
+        sound.setLooping(0,true);
+        sound.setVolume(0, parent.gameSoundVolume);
     }
 
     @Override
     public void show() {
-        showMain();
+        if(openCredits){
+            showCredits();
+        } else{
+            showMain();
+        }
     }
 
     public void showMain(){

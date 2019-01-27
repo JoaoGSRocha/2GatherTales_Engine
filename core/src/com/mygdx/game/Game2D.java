@@ -16,6 +16,7 @@ public class Game2D extends Game {
 	public final static int CINEMATIC_SCREEN_MAIN = 1;
 	public final static int CINEMATIC_SCREEN = 2;
 	public final static int ANSWER_SCREEN = 3;
+	public final static int END_SCREEN = 4;
 	public float gameSoundVolume=0.5f;
 	public Preferences prefs;
 	public final static String gameName = "Easnamh";
@@ -81,6 +82,10 @@ public class Game2D extends Game {
 			case ANSWER_SCREEN:
 				answerScreen = new AnswersScreens(this, JSONParser.questions, key-1);
 				this.setScreen(answerScreen);
+			case END_SCREEN:
+				mainScreen = new MenuScreens(this,true);
+				this.setScreen(mainScreen);
+				break;
 		}
 	}
 }
