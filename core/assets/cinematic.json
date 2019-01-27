@@ -64,7 +64,7 @@
             "charac" : "imgs/Leanan_Sid.png",
             "music": "",
             "text" : "Ok you seem to not be...in the right vibe, as much as I would have liked you to be...too bad....we could have had some fun....",
-            "trigger_serialnumber": "8",
+            "trigger_serialnumber": "9",
             "trigger_type": "cinematic"
         },
         {
@@ -209,7 +209,7 @@
         {
             "serialnumber": "22",
             "type" : "cinematic",
-            "backg" : "lose1_character.png",
+            "backg" : "imgs/lose1_character.png",
             "charac" : "imgs/lose1_curtain.png",
             "music": "",
             "text" : "You managed to cross the path and after facing all the 3...you seem to gather the attention of none....and as you are acknowling your lack of interest....the bridge to the last island...your home....falls...",
