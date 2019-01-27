@@ -28,7 +28,7 @@ public class CinematicScreens implements Screen {
     private Actor dialogRect;
     private TextButton homeButton;
     private Cinematic cinematic;
-    private ArrayList<Cinematic> cinematicAl;
+    private ArrayList<Cinematic> cinematicAl = new ArrayList<Cinematic>();
     private int key;
     private Skin skin;
     private Label label;
@@ -48,6 +48,7 @@ public class CinematicScreens implements Screen {
 
     @Override
     public void show() {
+        loadImgs();
         label.setWrap(true);
 
         dialogRect = new DialogRect();
@@ -84,19 +85,30 @@ public class CinematicScreens implements Screen {
     }
 
     public void loadImgs(){
+        Image backg = new Image();
+        Image charac = new Image();
         Table table = new Table();
         Table table2 = new Table();
         table.setFillParent(true);
         table2.setFillParent(true);
-        Image backg = new Image(new TextureRegionDrawable(
-                new TextureRegion(new Texture(this.cinematicAl.get(this.key).getBackg()))));
-        Image charac = new Image(new TextureRegionDrawable(
-                new TextureRegion(new Texture(this.cinematicAl.get(this.key).getCharac()))));
-        charac.setScaling(Scaling.fit); // Default is Scaling.stretch, as you found.
-        stage.addActor(table);
-        stage.addActor(table2);
-        table.add(backg).expand().fill();
-        table2.add(charac).expand().fill();
+        if(this.cinematicAl.get(this.key).getBackg()!= null){
+            backg = new Image(new TextureRegionDrawable(
+                    new TextureRegion(new Texture(this.cinematicAl.get(this.key).getBackg()))));
+            backg.setScaling(Scaling.fit);
+            stage.addActor(table);
+            table.add(backg).expand().fill();
+        }
+        if(this.cinematicAl.get(this.key).getCharac()!= null) {
+            charac = new Image(new TextureRegionDrawable(
+                    new TextureRegion(new Texture(this.cinematicAl.get(this.key).getCharac()))));
+            charac.setScaling(Scaling.fit); // Default is Scaling.stretch, as you found.
+            stage.addActor(table2);
+            table2.add(charac).expand().fill();
+        }
+
+
+
+
     }
 
 
