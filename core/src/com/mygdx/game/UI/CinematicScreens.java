@@ -28,12 +28,16 @@ public class CinematicScreens implements Screen {
     private Actor dialogRect;
     private TextButton homeButton;
     private Cinematic cinematic;
+    private ArrayList<Cinematic> cinematicAl;
+    private int key;
     private Skin skin;
     private Label label;
 
     public CinematicScreens(Game2D game, ArrayList<Cinematic> cinematicAl, int key) {
         parent = game;
         skin = parent.skin;
+        this.cinematicAl = cinematicAl;
+        this.key = key;
 
         label = new Label(cinematicAl.get(key).getText(),skin);
         cinematic = cinematicAl.get(key);
@@ -82,9 +86,9 @@ public class CinematicScreens implements Screen {
         table.setFillParent(true);
         table2.setFillParent(true);
         Image backg = new Image(new TextureRegionDrawable(
-                new TextureRegion(new Texture(this.questionsA1.get(key).getBackg()))));
+                new TextureRegion(new Texture(this.cinematicAl.get(this.key).getBackg()))));
         Image charac = new Image(new TextureRegionDrawable(
-                new TextureRegion(new Texture(this.questionsA1.get(key).getCharac()))));
+                new TextureRegion(new Texture(this.cinematicAl.get(this.key).getCharac()))));
         charac.setScaling(Scaling.fit); // Default is Scaling.stretch, as you found.
         stage.addActor(table);
         stage.addActor(table2);

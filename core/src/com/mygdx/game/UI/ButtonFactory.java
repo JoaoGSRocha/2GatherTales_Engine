@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class ButtonFactory {
 
     private static final int START_X_VAL = 700;
-    private static final int START_Y_VAL = 450;
+    private static final int START_Y_VAL = 420;
     private static final int INC_Y_VAL = -120;
 
     UI_Logic ui_logic = new UI_Logic();
@@ -22,7 +22,7 @@ public class ButtonFactory {
         int key = questionKey -1;
         int count = 0;
         for(final Answer answer : questionsAl.get(questionKey).getAnswers()){
-            TextButton button = ui_logic.createButton(answer.getText(),new float[]{START_X_VAL, START_Y_VAL + INC_Y_VAL * count},new ChangeListener() {
+            TextButton button = ui_logic.createButton(parent, answer.getText(),new float[]{START_X_VAL, START_Y_VAL + INC_Y_VAL * count},new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
                     switch(answer.getTrigger_type()){
@@ -59,7 +59,7 @@ public class ButtonFactory {
 
 
     public TextButton createBacktoMainButton(final Game2D parent){
-        TextButton button = new UI_Logic().createButton("Home", new float[]{0, Gdx.graphics.getHeight()-20},
+        TextButton button = new UI_Logic().createButton(parent,"Home", new float[]{0, Gdx.graphics.getHeight()-20},
             new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {

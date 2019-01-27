@@ -56,6 +56,7 @@ public class AnswersScreens implements Screen {
             button.getLabel().setWrap(true);
             button.invalidate();
             button.setWidth(200);
+            button.setHeight(100);
             stage.addActor(button);
 
         }
