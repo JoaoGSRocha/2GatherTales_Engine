@@ -24,6 +24,7 @@ public class CinematicScreens implements Screen {
     private Stage stage;
     private Actor dialogRect;
     private TextButton homeButton;
+    private Cinematic cinematic;
     private Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
     private Label label;
 
@@ -31,6 +32,7 @@ public class CinematicScreens implements Screen {
         parent = game;
 
         label = new Label(cinematicAl.get(key).getText(),skin);
+        cinematic = cinematicAl.get(key);
 
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
@@ -57,7 +59,14 @@ public class CinematicScreens implements Screen {
         label.addListener(new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                System.out.println("YOU CLOCKED IN THE DIALOG");
+                switch(cinematic.getTrigger_type()){
+                    case "cinematic":
+                        parent.changeScreen(parent.CINEMATIC_SCREEN,cinematic.getTrigger_serialnumber());
+                        break;
+                    case "answer":
+                        parent.changeScreen(parent.ANSWER_SCREEN,cinematic.getTrigger_serialnumber());
+                        break;
+                }
             }
         });
         stage.addActor(label);

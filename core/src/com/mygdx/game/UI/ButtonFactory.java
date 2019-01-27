@@ -35,23 +35,26 @@ class CoordsCalc {
 
 public class ButtonFactory {
 
+    private static final int START_X_VAL = 500;
+    private static final int START_Y_VAL = 50;
+    private static final int INC_X_VAL = 0;
+    private static final int INC_Y_VAL = 40;
+
     UI_Logic ui_logic = new UI_Logic();
 
     public ArrayList<TextButton> createAnswerButton_Al(Game2D parent, ArrayList<Question> questionsAl, int questionKey){
         ArrayList<TextButton> textButtonsAl = new ArrayList<TextButton>();
         int key = questionKey -1;
-        CoordsCalc coordsCalc = new CoordsCalc();
-        ArrayList<ButtonPosition> buttonPositionAl = coordsCalc.giveButtonPosition_AL();
+        int count = 0;
         for(Answer answer : questionsAl.get(questionKey).getAnswers()){
-            int count = 0;
-            TextButton button = ui_logic.createButton(answer.getText(),new float[]{buttonPositionAl.get(count).getPos_X(), buttonPositionAl.get(count).getPos_Y()},new ChangeListener() {
+            TextButton button = ui_logic.createButton(answer.getText(),new float[]{START_X_VAL, START_Y_VAL + INC_Y_VAL * count},new ChangeListener() {
                 @Override
                 public void changed(ChangeEvent event, Actor actor) {
                     switch(answer.getTrigger_type()){
                         case "cinematic":
                             parent.changeScreen(parent.CINEMATIC_SCREEN,answer.getTrigger_serialnumber());
                             break;
-                        case "answers":
+                        case "answer":
                             parent.changeScreen(parent.ANSWER_SCREEN,answer.getTrigger_serialnumber());
                             break;
                     }

@@ -1,0 +1,190 @@
+{
+    "response":[
+        {
+            "serialnumber": "1",
+            "type" : "cinematic",
+
+            "text" : "In the woods of Jimali there are many random encounters that players face when they cross it...if the dice are forgiving they will be blessed with a clean path to the other side of the kingdom, but if not they might be traped forever....but in some cases this might be good...THere are creatures roaming free on the woods, there are have been many kind but at the moment only a few survived, through the emanicipation of the OUR (Organization of the United Races, composed by Half-Orcs, Humans, Elfs, Dwarves, Gnomes and Halflings), since these conquered the free lands with few exceptions, so the few who survived where either too rapid on their reproduction to be able to be extint or dissipated to other lands or were charismatic enough....to manage to be left alone....Skogra \"Mistress of the Forest\", Leana-Sidhe (Human/Fairy Lover), Naiad Fountain Spring Nymph",
+
+            "trigger_serialnumber": "2",
+            "trigger_type": "cinematic"
+        }, {
+            "serialnumber": "2",
+            "type" : "cinematic",
+
+            "text" : "but in some cases this might be good...There are creatures roaming free on the woods, there are have been many kind but at the moment only a few survived, through the emanicipation of the OUR (Organization of the United Races, composed by Half-Orcs, Humans, Elfs, Dwarves, Gnomes and Halflings), since these conquered the free lands with few exceptions, so the few who survived where either too rapid on their reproduction to be able to be extint or dissipated to other lands or were charismatic enough....to manage to be left alone....Skogra \"Mistress of the Forest\", Leana-Sidhe (Human/Fairy Lover), Naiad Fountain Spring Nymph",
+
+            "trigger_serialnumber": "3",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "3",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "4",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "4",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "1",
+            "trigger_type": "answer"
+        },
+        {
+            "serialnumber": "5",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "6",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "6",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "7",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "7",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "8",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "8",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "9",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "9",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "10",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "10",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "3",
+            "trigger_type": "answer"
+        },
+        {
+            "serialnumber": "11",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "12",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "12",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "13",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "13",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "14",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "14",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "15",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "15",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "16",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "16",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "17",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "17",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "5",
+            "trigger_type": "answer"
+        },
+        {
+            "serialnumber": "18",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "19",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "19",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "20",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "20",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "21",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "21",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "22",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "22",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "23",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "23",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "24",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "24",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "25",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "25",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "26",
+            "trigger_type": "cinematic"
+        },
+        {
+            "serialnumber": "26",
+            "type" : "cinematic",
+            "text" : "(Fight between NAIAD & the fairy) (Storms towards you from the Skogra, to what the Fairy helps you escape) (UI for route / Map, how the location looks like) There are lakes, There are deep forests.(Maybe a map would be fun to do)(THe fairy gets sad at when you do something bad, but immediately misses you the 2nd time you do something bad again and gets over you again, if you do something good, she never acknowledges you)(You gonna have always a 4th option that takes you to an attack encounter, if you have more than 2 attacks you die, so going to the water path lets you heal yourself)",
+            "trigger_serialnumber": "1",
+            "trigger_type": "settings"
+        }
+    ]
+}
+
