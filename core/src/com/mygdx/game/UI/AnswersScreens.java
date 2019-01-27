@@ -33,6 +33,7 @@ public class AnswersScreens implements Screen {
     private ButtonFactory buttonFactory;
     private ArrayList<TextButton> buttonsAl;
     private  int key;
+    private Label label;
     Skin skin;
 
     public AnswersScreens(Game2D game, ArrayList<Question> questionsAl, int key) {
@@ -58,8 +59,22 @@ public class AnswersScreens implements Screen {
             button.setWidth(200);
             button.setHeight(100);
             stage.addActor(button);
-
         }
+
+        Image questionBg = new Image(new TextureRegionDrawable(
+                new TextureRegion(new Texture("box3.png"))));
+
+        questionBg.setSize(335,300);
+        stage.addActor(questionBg);
+
+        label = new Label(questionsA1.get(key).getQuestion(),skin);
+        label.setColor(0f,0f,0f,1);
+        label.setWrap(true);
+        label.setWidth(300);
+        label.setX(20);
+        label.setY(240-label.getHeight());
+        stage.addActor(label);
+
     }
 
     public void loadImgs(){
