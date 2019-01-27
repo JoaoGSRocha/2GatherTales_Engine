@@ -217,24 +217,40 @@
         {
             "serialnumber": "24",
             "type" : "cinematic",
+            "backg" : "imgs/final1.jpg",
+            "charac" : "imgs/Win1.png",
             "text" : "Your bruises are now but history, you are revitalized. When you faced the healer a new story began. Now this invincible duo will dissimate whatever vile creatures remain at the adventure's hometown",  
-            "trigger_serialnumber": "25",
-            "trigger_type": "cinematic"
+           "trigger_serialnumber": "28",
+            "trigger_type": "END"
         },
         {
             "serialnumber": "25",
             "type" : "cinematic",
+            "backg" : "imgs/final1.jpg",
+            "charac" : "imgs/Win3.png",
             "text" : "Running and chatting you and the foxy creature arrive at the last island...you continue the path happily conversating and conitinuing a very peaceulf path to home...to happyness",
-            "trigger_serialnumber": "26",
-            "trigger_type": "cinematic"
+           "trigger_serialnumber": "28",
+            "trigger_type": "END"
         },
         {
             "serialnumber": "26",
             "type" : "cinematic",
+            "backg" : "imgs/final1.jpg",
+            "charac" : "imgs/Win2.png",
+
+
             "text" : "When you reach to the last island you can feel the fresh breeze, you are now relieved. You know that you will be reaching home soon...and now...a very pleasing winged lady friend is gonna ensure, you do so, side by side with her. To aid you to the end of tales. ",
-            "trigger_serialnumber": "1",
-            "trigger_type": "settings"
+           "trigger_serialnumber": "28",
+            "trigger_type": "END"
+        },
+        {
+            "serialnumber": "28",
+            "type" : "cinematic",
+            "text" : "",
+            "trigger_serialnumber": "28",
+            "trigger_type": "END"
         }
+
     ]
 }
 
