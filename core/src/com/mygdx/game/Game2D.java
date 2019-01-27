@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.mygdx.game.JSON.JSONParser;
 import com.mygdx.game.UI.AnswersScreens;
 import com.mygdx.game.UI.CinematicScreens;
@@ -17,15 +18,15 @@ public class Game2D extends Game {
 	public final static int ANSWER_SCREEN = 3;
 	public float gameSoundVolume=0.5f;
 	public Preferences prefs;
-	public final static String gameName = "Fuadaithe";
-
+	public final static String gameName = "Easnamh";
+	public static Skin skin;
 	private Screen mainScreen;
 	private Screen cinematicScreen;
 	private Screen answerScreen;
 
 	@Override
 	public void create() {
-		prefs = Gdx.app.getPreferences("Fuadaithe");
+		prefs = Gdx.app.getPreferences("Easnamh");
 		Gdx.graphics.setTitle(gameName);
 		Gdx.graphics.setResizable(false);
 		Gdx.graphics.setWindowedMode(1000,563);
@@ -38,6 +39,8 @@ public class Game2D extends Game {
 		}else{
 			gameSoundVolume=prefs.getFloat("gameSoundVolume");
 		}
+
+		skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
 
 		mainScreen = new MenuScreens(this);
 		this.setScreen(mainScreen);

@@ -26,10 +26,11 @@ public class AnswersScreens implements Screen {
     private Actor dialogRect;
     private ButtonFactory buttonFactory;
     private ArrayList<TextButton> buttonsAl;
-    Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
+    Skin skin;
 
     public AnswersScreens(Game2D game, ArrayList<Question> questionsAl, int key) {
         parent = game;
+        skin = parent.skin;
 
         buttonFactory = new ButtonFactory();
         buttonsAl = buttonFactory.createAnswerButton_Al(parent,questionsAl,key);
@@ -40,6 +41,10 @@ public class AnswersScreens implements Screen {
     @Override
     public void show() {
         for(TextButton button: buttonsAl){
+            button.getLabelCell().width(200);
+            button.getLabel().setWrap(true);
+            button.invalidate();
+            button.setWidth(200);
             stage.addActor(button);
         }
     }

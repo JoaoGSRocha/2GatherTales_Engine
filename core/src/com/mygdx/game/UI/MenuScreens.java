@@ -22,10 +22,11 @@ public class MenuScreens implements Screen {
     private Stage stage;
     private boolean exitFadeOut=false;
     public Sound sound = Gdx.audio.newSound(Gdx.files.internal("sounds/intro menu storytaler punchline.mp3"));
-    Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
+    Skin skin;
 
     public MenuScreens(Game2D game) {
         parent = game;
+        skin = parent.skin;
 
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);

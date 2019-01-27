@@ -12,7 +12,6 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.mygdx.game.DialogRect;
 import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.Cinematic;
-import org.omg.CORBA.INTERNAL;
 
 import java.util.ArrayList;
 
@@ -25,11 +24,12 @@ public class CinematicScreens implements Screen {
     private Actor dialogRect;
     private TextButton homeButton;
     private Cinematic cinematic;
-    private Skin skin = new Skin(Gdx.files.internal("flat/skin/skin.json"));
+    private Skin skin;
     private Label label;
 
     public CinematicScreens(Game2D game, ArrayList<Cinematic> cinematicAl, int key) {
         parent = game;
+        skin = parent.skin;
 
         label = new Label(cinematicAl.get(key).getText(),skin);
         cinematic = cinematicAl.get(key);

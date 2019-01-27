@@ -7,38 +7,13 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.mygdx.game.Game2D;
 import com.mygdx.game.Model.Parser.*;
 
-import javax.xml.soap.Text;
 import java.util.ArrayList;
-import java.util.HashMap;
-
-class CoordsCalc {
-    private static  final int START_X_VAL = 500;
-    private static  final int START_Y_VAL = 50;
-    private static  final int INC_X_VAL = 0;
-    private static  final int INC_Y_VAL = 40;
-
-    public ArrayList<ButtonPosition> giveButtonPosition_AL(){
-        ArrayList<ButtonPosition> buttonPosition_al =
-                new ArrayList<ButtonPosition>();
-        ButtonPosition buttonPosition;
-
-        for (int i=0; i<4; i++){
-            buttonPosition = new ButtonPosition(
-                    START_X_VAL + INC_X_VAL * i,
-                    START_Y_VAL + INC_Y_VAL * i);
-            buttonPosition_al.add(buttonPosition);
-        }
-
-        return buttonPosition_al;
-    }
-}
 
 public class ButtonFactory {
 
-    private static final int START_X_VAL = 500;
-    private static final int START_Y_VAL = 50;
-    private static final int INC_X_VAL = 0;
-    private static final int INC_Y_VAL = 40;
+    private static final int START_X_VAL = 700;
+    private static final int START_Y_VAL = 450;
+    private static final int INC_Y_VAL = -120;
 
     UI_Logic ui_logic = new UI_Logic();
 
