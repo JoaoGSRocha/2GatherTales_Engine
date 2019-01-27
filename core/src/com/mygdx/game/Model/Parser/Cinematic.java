@@ -6,6 +6,17 @@ public class Cinematic   {
     private Key triggerKey;
     private  Integer serialnumber;
     private String type;
+    private String music;
+
+    public String getMusic() {
+        return music;
+    }
+
+    public void setMusic(String music) {
+        this.music = music;
+    }
+
+    private string music;
 
     private Integer trigger_serialnumber;
     private String trigger_type;
